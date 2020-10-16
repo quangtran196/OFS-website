@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu bar */
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+.logo img{
+    float: left;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+
+    flex: 1;
+    background: gray;
+    padding: 10px;
+    background: #F1EFED;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+    transition: 0.3s ease;
+}
+
+
+.navbar ul li a:hover{
+    color: red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background: #F1EFED;
+}
+
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+}
+
+.navbar ul li:hover .sub-menu ul {
+    display: block;
+    padding-top: 10px;
+}
+.navbar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+
+
+/* End of menu */
+
+/* Body */
+.body{
+    width: 100%;
+}
+.body1 img{
+    display: block;
+    width: 85%;
+    top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catagory-main{
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  15px;
+
+}
+.fruit{
+    position:relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #48ACEE;
+    width: 25%;
+    padding: 10px;
+
+
+}
+
+.fruit p{
+    position: absolute;
+    top: 40%;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+}
+.fruit h1{
+    position: absolute;
+    top: 50%;
+    color: white;
+    display: inline-block;
+}
+.fruit img{
+    margin-top: 10%;
+    margin-left: 42%;
+    width: 60%;
+}
