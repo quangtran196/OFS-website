@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #EFF1ED !important;
+}
+/* Menu bar */
+/* Menu bar */
+.container{
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+.logo img{
+    float: left;
+    position: relative;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav {
+    flex: 1;
+    background: gray;
+    padding: 10px 0;
+    background: #FFD367;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+
+}
+nav ul li{
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background: #FFD367;
+}
+
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+}
+
+.navbar ul li:hover .sub-menu ul {
+    display: block;
+    padding-top: 10px;
+
+}
+.navbar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+/* End of menu */
+
+/* catagories */
+.body{
+    width: 100%;
+}
+.body1 img{
+    display: block;
+    width: 85%;
+    top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catagory-main{
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.catagory-main img{
+    width: 32%;
+}
+.catagory-main h1{
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    color: #555;
+}
+
+.row1{
+    position: relative;
+}
+
+.row1 .fruit2{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.row2 {
+    margin-top: 20px;
+}
+
+.row2 .fruit2{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.catagory-main a{
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 40px;
+    width: 60px;
+    background: green;
+}
+
+/* end of catagories */
+
+/* feature products */
+.features{
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+}
+.features h1{
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    color: #555;
+}
+
+.features  ul{
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+}
+.features  ul li{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.features a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.features ul li a:hover{
+    color: #AFEC65;
+    border-bottom: 2px solid #AFEC65;
+
+}
+.col-1{
+    position: relative;
+    padding: 0px;
+    min-width: 25%;
+    margin-bottom: 35px;
+    border: 1px solid black;
+}
+.col-1 h4{
+    padding: 7px 0;
+}
+.col-1 p{
+    padding: 7px 0;
+}
+.col-1 img{
+    width: 15%;
+    margin: 0;
+    position: flex;
+    border: 1px solid #E4E7E2;
+}
