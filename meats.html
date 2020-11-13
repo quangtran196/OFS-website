@@ -1,23 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Fruit</title>
+        <title>Meat Products</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/category-style.css">
+      <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
-  display: none;
- position: block;
- display: flex;
- flex-direction: row;
- justify-content: center;
- margin-left:75px;
- margin-right: 75px;
- transition: transform 0.8s;
+  max-width: 1700px;
+  margin: auto;
+  background: #f2f2f2;
+  overflow: auto;
 }
 .gallery{
     margin: 1px;
@@ -27,7 +22,7 @@
 }
 .gallery img {
   width:100%;
-  height: auto;
+  height:auto;
 }
         </style>
     </head>
@@ -39,21 +34,22 @@
 
                 <nav>
                     <div class="logo">
-                        <img src="imagesfe/logo.png">
+                        <img src="images/imagesfe/logo.png">
                     </div>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Categories</a>
                             <div class="sub-menu">
                                 <ul>
-                                  <li><a href="fruit.html">Fruits</a></li>
-                                  <li><a href="#">Vegetables</a></li>
-                                  <li><a href="#">Meats</a></li>
-                                  <li><a href="dairy.html">Dairy</a></li>
-                                  <li><a href="#">Snacks</a></li>
-                                  <li><a href="#">Canned Food</a></li>
+                                    <li><a href="#">Fruits</a></li>
+                                    <li><a href="#">Vegetables</a></li>
+                                    <li><a href="#">Meats</a></li>
+                                    <li><a href="#">Dairy</a></li>
+                                    <li><a href="#">Snacks</a></li>
+                                    <li><a href="#">Canned Food</a></li>
                                 </ul>
                             </div>
+
                         </li>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">About</a></li>
@@ -61,30 +57,31 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
         <!-- end of menu bar -->
 
         <div class="body1">
-            <img src="imagesfe/main-page.jpg" alt="" height="200">
+            <img src="images/imagesfe/main-page.jpg" alt="" height="200">
         </div>
 
         <!-- feature products -->
         <div class="features">
-            <h1>Fruit</h1>
+            <h1>Meat Products</h1>
             <ul>
-              <li><a href="fruit.html">Fruits</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Meats</a></li>
-              <li><a href="dairy.html">Dairy</a></li>
-              <li><a href="#">Snacks</a></li>
-              <li><a href="#">Canned Food</a></li>
+                <li><a href="#">Fruits</a></li>
+                <li><a href="#">Vegetables</a></li>
+                <li><a href="#">Meats</a></li>
+                <li><a href="#">Dairy</a></li>
+                <li><a href="#">Snacks</a></li>
+                <li><a href="#">Canned Food</a></li>
             </ul>
             </div>
 
-                  <div class= "container1">
+                  <div class= "container-catagory">
                     <div class="gallery">
-                        <a href=""><img src="imagesfe/norange.jpg" class="fruit2"></a>
-                        <h4><a href="#">Navel Orange</a></h4>
+                        <a href=""><img src="images/imagesfe/ribeye.jpg" class="fruit2"></a>
+                        <h4><a href="#">American Angus Ribeye Steak - 12oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -92,20 +89,22 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <p>3.0 lbs</p>
-                        <p>$4.88</p>
+                        <p>12oz</p>
+                        <p>$14.95</p>
 
                           <label> Quantity: </label>
                         <form action="/addcart.php" method= "post">
                           <input type ="number" value="0">
                           <input type="submit" value="Add to cart">
-                          </form>
-                          </div>
+                        </form>
+                    </div>
+
+
 
 
                       <div class="gallery">
-                          <a href=""><img src="imagesfe/apple.jpg" class="fruit2"></a>
-                          <h4><a href="#">Gala Apples</a></h4>
+                          <a href=""><img src="images/imagesfe/groundbeef.jpg" class="fruit2"></a>
+                          <h4><a href="#">Kroger 100% Pure Ground Beef - 16oz</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
@@ -113,8 +112,8 @@
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
 
-                          <p>3.0 lbs</p>
-                          <p>$2.67</p>
+                          <p>16oz</p>
+                          <p>$8.79</p>
                       </div>
                       <label> Quantity: </label>
                       <form action="/addcart.php" method= "post">
@@ -124,9 +123,12 @@
                       </div>
 
 
+
+
+
                     <div class="gallery">
-                        <a href=""><img src="imagesfe/sberry.jpg" class="fruit2"></a>
-                        <br></br><h4><a href="#"> Produce Unbranded Hot House Strawberries</a></h4>
+                        <a href=""><img src="images/imagesfe/chickenb.jpg" class="fruit2"></a>
+                        <h4><a href="#">Foster Farms Chicken Breast - 10oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -134,8 +136,8 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <p>1.0 lbs</p>
-                        <p>$2.28</p>
+                        <p>10oz</p>
+                        <p>$13.49</p>
 
                         <label> Quantity: </label>
                         <form action="/addcart.php" method= "post">
@@ -148,8 +150,8 @@
 
 
                               <div class="gallery">
-                                <a href=""><img src="imagesfe/redg.jpg" class="fruit2"></a>
-                                <h4><a href="#">Organic Red seedless Grapes</a></h4>
+                                <a href=""><img src="images/imagesfe/chickenwing.jpg" class="fruit2"></a>
+                                <h4><a href="#">Yorkshire Valley Chicken Wings - 24oz</a></h4>
                                 <div class="rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -157,8 +159,8 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                 </div>
-                                <p>1.5 lbs</p>
-                                <p>$4.99</p>
+                                <p>24oz</p>
+                                <p>$14.54</p>
 
                                 <label> Quantity: </label>
                                 <form action="/addcart.php" method= "post">
@@ -169,10 +171,11 @@
 
 
 
+
+
                           <div class="gallery">
-                                <a href=""><img src="imagesfe/ki.jpg" class="fruit2"></a>
-                                <br></br>  <br></br>  <br></br>   <br>
-                              <h4><a href="#">Kiwis</a></h4>
+                              <a href=""><img src="images/imagesfe/porkloin.jpg" class="fruit2"></a>
+                              <h4><a href="#">Hormet Pork Center Cut Loin 27.2oz</a></h4>
                               <div class="rating">
                                   <i class="fa fa-star"></i>
                                   <i class="fa fa-star"></i>
@@ -180,8 +183,8 @@
                                   <i class="fa fa-star"></i>
                                   <i class="fa fa-star"></i>
                               </div>
-                              <p> 2.0 lbs</p>
-                              <p>$3.98</p>
+                              <p>27.2oz</p>
+                              <p>$17.99</p>
 
                               <label> Quantity: </label>
                               <form action="/addcart.php" method= "post">
@@ -189,8 +192,28 @@
                               <input type="submit" value="Add to cart">
                               </form>
                               </div>
-                                </div>
 
+
+                          <div class="gallery">
+                                  <a href=""><img src="images/imagesfe/porkchop.jpg" class="fruit2"></a>
+                                  <h4><a href="#">Hormet Pork Chop Cut 40oz</a></h4>
+                                  <div class="rating">
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                  </div>
+                                  <p>40oz</p>
+                                  <p>$25.99</p>
+
+                                  <label> Quantity: </label>
+                                  <form action="/addcart.php" method= "post">
+                                  <input type ="number" value="0">
+                                  <input type="submit" value="Add to cart">
+                                  </form>
+                          </div>
+                </div>
 
         <!-- end of feature products -->
 
