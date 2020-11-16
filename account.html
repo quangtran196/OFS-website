@@ -60,17 +60,16 @@
             <hr id="Indicator">
           </div>
 
-          <form id="LoginForm" action="/process.php" method="post">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
+          <form id="LoginForm" action="/login.php" method="post">
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="password">
             <button type="submit" class="btn">Login</button>
             <a href="">Forgot Password</a>
           </form>
 
-          <form id="RegForm">
-            <input type="text" placeholder="Username">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
+          <form id="RegForm" action="/register.php" method="post">
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="password">
             <button type="submit" class="btn">Register</button>
           </form>
 

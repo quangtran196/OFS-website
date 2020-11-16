@@ -18,17 +18,17 @@
       // select user
       $sql = "SELECT password FROM students WHERE username
           = '$username'";
-
       $results = mysqli_query($conn, $sql);
 
       if ($results) {
-
         $row = mysqli_fetch_assoc($results);
         if ($row["password"] === $password) { //Checks if the password matches
+          session_start();
           $logged_in = true; //Logging in
           $sql = "SELECT * FROM students"; //Selecting all the students
           $results = mysqli_query($conn, $sql);
-          echo "Login successful!";
+          $_SESSION['sess_user']=$username;
+          header("Location: home.php");
         } else {
           echo "Username or password is incorrect";
           }
