@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -35,7 +37,15 @@
                         </li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <?php
+
+                        if(isset($_SESSION["sess_user"])){
+                            echo "<li><a href='account.html'>Bob</a></li>";
+                            echo "<li><a href='logout.php'>Logout</a></h2></li>";
+                        } else
+                        { echo '<li><a href="account.html">Account</a></li>';
+                        }
+                        ?>
                         <li><a href="">Checkout</a></li>
                     </ul>
                 </nav>
