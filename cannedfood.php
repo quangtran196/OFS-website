@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Meat Products</title>
+        <title>Canned Food</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,26 +34,26 @@
 
                 <nav>
                     <div class="logo">
-                        <a href="home.html"><img src="images/homepage/logo.png" with="125px">
+                        <a href="home.php"><img src="images/homepage/logo.png" with="125px">
                         </a>
                     </div>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li><a href="">Categories</a>
                             <div class="sub-menu">
                                 <ul>
-                                    <li><a href="fruit.html">Fruits</a></li>
-                                    <li><a href="veggies.html">Vegetables</a></li>
-                                    <li><a href="meats.html">Meats</a></li>
-                                    <li><a href="dairy.html">Dairy</a></li>
+                                    <li><a href="fruit.php">Fruits</a></li>
+                                    <li><a href="veggies.php">Vegetables</a></li>
+                                    <li><a href="meats.php">Meats</a></li>
+                                    <li><a href="dairy.php">Dairy</a></li>
                                     <li><a href="#">Snacks</a></li>
-                                    <li><a href="cannedfood.html">Canned Food</a></li>
+                                    <li><a href="cannedfood.php">Canned Food</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="account.php">Account</a></li>
                         <li><a href="">Checkout</a></li>
                     </ul>
                 </nav>
@@ -68,7 +68,7 @@
 
         <!-- feature products -->
         <div class="features">
-            <h1>Meat Products</h1>
+            <h1>Canned Foods</h1>
             <ul>
                 <li><a href="#">Fruits</a></li>
                 <li><a href="#">Vegetables</a></li>
@@ -81,8 +81,8 @@
 
                   <div class= "container-catagory">
                     <div class="gallery">
-                        <a href=""><img src="images/imagesfe/ribeye.jpg" class="fruit2"></a>
-                        <h4><a href="#">American Angus Ribeye Steak - 12oz</a></h4>
+                        <a href=""><img src="images/imagesfe/cannedcorn.jpg" class="fruit2"></a>
+                        <h4><a href="#">Del Monte Whole Kernel Corn 15.25oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -90,8 +90,8 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <p>12oz</p>
-                        <p>$14.95</p>
+                        <p>15.25oz</p>
+                        <p>$4.95</p>
 
                           <label> Quantity: </label>
                         <form action="/addcart.php" method= "post">
@@ -104,8 +104,8 @@
 
 
                       <div class="gallery">
-                          <a href=""><img src="images/imagesfe/groundbeef.jpg" class="fruit2"></a>
-                          <h4><a href="#">Kroger 100% Pure Ground Beef - 16oz</a></h4>
+                          <a href=""><img src="images/imagesfe/cannedcorn2.jpg" class="fruit2"></a>
+                          <h4><a href="#">Green Giant White Shoepeg Corn 15.25oz</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
@@ -113,8 +113,8 @@
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
 
-                          <p>16oz</p>
-                          <p>$8.79</p>
+                          <p>15.25oz</p>
+                          <p>$4.79</p>
                       </div>
                       <label> Quantity: </label>
                       <form action="/addcart.php" method= "post">
@@ -128,8 +128,8 @@
 
 
                     <div class="gallery">
-                        <a href=""><img src="images/imagesfe/chickenb.jpg" class="fruit2"></a>
-                        <h4><a href="#">Foster Farms Chicken Breast - 10oz</a></h4>
+                        <a href=""><img src="images/imagesfe/cannedtomatos.jpg" class="fruit2"></a>
+                        <h4><a href="#">Hunts Diced Tomatoes 12oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -137,8 +137,8 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <p>10oz</p>
-                        <p>$13.49</p>
+                        <p>12oz</p>
+                        <p>$2.49</p>
 
                         <label> Quantity: </label>
                         <form action="/addcart.php" method= "post">
@@ -151,8 +151,8 @@
 
 
                               <div class="gallery">
-                                <a href=""><img src="images/imagesfe/chickenwing.jpg" class="fruit2"></a>
-                                <h4><a href="#">Yorkshire Valley Chicken Wings - 24oz</a></h4>
+                                <a href=""><img src="images/imagesfe/cannedtuna.jpg" class="fruit2"></a>
+                                <h4><a href="#">American Light Meat Tuna - 6.5oz</a></h4>
                                 <div class="rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -160,8 +160,8 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                 </div>
-                                <p>24oz</p>
-                                <p>$14.54</p>
+                                <p>6.5oz</p>
+                                <p>$1.54</p>
 
                                 <label> Quantity: </label>
                                 <form action="/addcart.php" method= "post">
@@ -175,8 +175,8 @@
 
 
                           <div class="gallery">
-                              <a href=""><img src="images/imagesfe/porkloin.jpg" class="fruit2"></a>
-                              <h4><a href="#">Hormet Pork Center Cut Loin 27.2oz</a></h4>
+                              <a href=""><img src="images/imagesfe/cornedbeef.jpg" class="fruit2"></a>
+                              <h4><a href="#">Libby's Corned Beef - 12oz</a></h4>
                               <div class="rating">
                                   <i class="fa fa-star"></i>
                                   <i class="fa fa-star"></i>
@@ -184,8 +184,8 @@
                                   <i class="fa fa-star"></i>
                                   <i class="fa fa-star"></i>
                               </div>
-                              <p>27.2oz</p>
-                              <p>$17.99</p>
+                              <p>12oz</p>
+                              <p>$3.99</p>
 
                               <label> Quantity: </label>
                               <form action="/addcart.php" method= "post">
@@ -196,8 +196,8 @@
 
 
                           <div class="gallery">
-                                  <a href=""><img src="images/imagesfe/porkchop.jpg" class="fruit2"></a>
-                                  <h4><a href="#">Hormet Pork Chop Cut 40oz</a></h4>
+                                  <a href=""><img src="images/imagesfe/spam.jpg" class="fruit2"></a>
+                                  <h4><a href="#">SPAM Classic - 12oz</a></h4>
                                   <div class="rating">
                                       <i class="fa fa-star"></i>
                                       <i class="fa fa-star"></i>
@@ -205,17 +205,23 @@
                                       <i class="fa fa-star"></i>
                                       <i class="fa fa-star"></i>
                                   </div>
-                                  <p>40oz</p>
-                                  <p>$25.99</p>
+                                  <p>12oz</p>
+                                  <p>$2.99</p>
 
                                   <label> Quantity: </label>
                                   <form action="/addcart.php" method= "post">
                                   <input type ="number" value="0">
                                   <input type="submit" value="Add to cart">
                                   </form>
-                          </div>
+                                  </div>
+                            </div>
+
+
+                    </div>
                 </div>
 
+            </div>
+        </div>
         <!-- end of feature products -->
 
 

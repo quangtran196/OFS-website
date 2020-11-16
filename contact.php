@@ -17,26 +17,26 @@
 
               <nav>
                   <div class="logo">
-                      <a href="home.html"><img src="images/homepage/logo.png" with="125px">
+                      <a href="home.php"><img src="images/homepage/logo.png" with="125px">
                       </a>
                   </div>
                   <ul>
-                      <li><a href="home.html">Home</a></li>
+                      <li><a href="home.php">Home</a></li>
                       <li><a href="">Categories</a>
                           <div class="sub-menu">
                               <ul>
-                                  <li><a href="fruit.html">Fruits</a></li>
-                                  <li><a href="veggies.html">Vegetables</a></li>
-                                  <li><a href="meats.html">Meats</a></li>
-                                  <li><a href="dairy.html">Dairy</a></li>
+                                  <li><a href="fruit.php">Fruits</a></li>
+                                  <li><a href="veggies.php">Vegetables</a></li>
+                                  <li><a href="meats.php">Meats</a></li>
+                                  <li><a href="dairy.php">Dairy</a></li>
                                   <li><a href="#">Snacks</a></li>
-                                  <li><a href="cannedfood.html">Canned Food</a></li>
+                                  <li><a href="cannedfood.php">Canned Food</a></li>
                               </ul>
                           </div>
                       </li>
-                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="contact.php">Contact Us</a></li>
                       <li><a href="">About</a></li>
-                      <li><a href="account.html">Account</a></li>
+                      <li><a href="account.php">Account</a></li>
                       <li><a href="">Checkout</a></li>
                   </ul>
               </nav>
