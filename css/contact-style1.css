@@ -234,6 +234,12 @@ h3{
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.input-group2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
 .input-row .input-group{
   flex-basis: 45%;
 }
