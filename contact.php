@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,7 +9,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="./css/contact-style.css">
+      <link rel="stylesheet" href="./css/contact-style1.css">
     </head>
 
     <body>
@@ -14,7 +17,6 @@
       <div class="container">
 
           <div class="navbar">
-
               <nav>
                   <div class="logo">
                       <a href="home.php"><img src="images/homepage/logo.png" with="125px">
@@ -36,7 +38,15 @@
                       </li>
                       <li><a href="contact.php">Contact Us</a></li>
                       <li><a href="">About</a></li>
-                      <li><a href="account.php">Account</a></li>
+                      <?php
+
+                      if(isset($_SESSION["sess_user"])){
+                          echo "<li><a href='account.php'>Bob</a></li>";
+                          echo "<li><a href='logout.php'>Logout</a></h2></li>";
+                      } else
+                      { echo '<li><a href="account.php">Account</a></li>';
+                      }
+                      ?>
                       <li><a href="">Checkout</a></li>
                   </ul>
               </nav>
@@ -53,17 +63,17 @@
                   <form>
                     <div class="input-row">
 
-                      <div class="input-group">
+                      <div class="input-group2">
                         <label> Name </label>
                         <input type="text" placeholder = "Jane Doe">
                       </div>
 
-                      <div class="input-group">
+                      <div class="input-group2">
                         <label> Phone </label>
                         <input type="text" placeholder = "+1-800-999-9999">
                       </div>
 
-                      <div class="input-group">
+                      <div class="input-group2">
                         <label> Email </label>
                         <input type="text" placeholder = "janedoe@gmail.com">
                       </div>
