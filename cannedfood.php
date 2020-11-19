@@ -59,7 +59,6 @@ session_start();
                         <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="">About</a></li>
                         <?php
-
                         if(isset($_SESSION["sess_user"])){
                             echo "<li><a href='account.php'>Bob</a></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
@@ -94,7 +93,7 @@ session_start();
 
                   <div class= "container1">
                     <div class="gallery">
-                        <a href=""><img src="images/imagesfe/cannedcorn.jpg" class="fruit2"></a>
+                        <a href=""><img src="images/imagesfe/cannedcorn.JPG" class="fruit2"></a>
                         <h4><a href="#">Del Monte Whole Kernel Corn 15.25oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -118,7 +117,7 @@ session_start();
 
 
                           <div class="gallery">
-                              <a href=""><img src="images/imagesfe/cannedcorn2.jpg" class="fruit2"></a>
+                              <a href=""><img src="images/imagesfe/cannedcorn2.JPG" class="fruit2"></a>
                               <h4><a href="#">Green Giant White Shoepeg Corn 15.25oz</a></h4>
                               <div class="rating">
                                   <i class="fa fa-star"></i>
@@ -142,7 +141,7 @@ session_start();
 
 
                       <div class="gallery">
-                          <a href=""><img src="images/imagesfe/cannedtomatos.jpg" class="fruit2"></a>
+                          <a href=""><img src="images/imagesfe/cannedtomatos.JPG" class="fruit2"></a>
                           <h4><a href="#">Hunts Diced Tomatoes 12oz</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
@@ -165,7 +164,7 @@ session_start();
 
 
                         <div class="gallery">
-                          <a href=""><img src="images/imagesfe/cannedtuna.jpg" class="fruit2"></a>
+                          <a href=""><img src="images/imagesfe/cannedtuna.JPG" class="fruit2"></a>
                           <h4><a href="#">American Light Meat Tuna - 6.5oz</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
@@ -189,7 +188,7 @@ session_start();
 
 
                                 <div class="gallery">
-                                    <a href=""><img src="images/imagesfe/cornedbeef.jpg" class="fruit2"></a>
+                                    <a href=""><img src="images/imagesfe/cornedbeef.JPG" class="fruit2"></a>
                                     <h4><a href="#">Libby's Corned Beef - 12oz</a></h4>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>

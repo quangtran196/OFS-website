@@ -57,6 +57,7 @@ session_start();
                             </div>
                         </li>
                         <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="">About</a></li>
                         <?php
 
                         if(isset($_SESSION["sess_user"])){
@@ -66,7 +67,6 @@ session_start();
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
                         ?>
-                        <li><a href="account.php">Account</a></li>
                         <li><a href="">Checkout</a></li>
                     </ul>
                 </nav>
@@ -94,7 +94,7 @@ session_start();
 
                   <div class= "container1">
                     <div class="gallery">
-                        <a href=""><img src="images/imagesfe/celery.jpg" class="fruit2"></a>
+                        <a href=""><img src="images/imagesfe/celery.JPG" class="fruit2"></a>
                         <h4><a href="#">Fresh Organic Celery - 0.5lb</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -118,7 +118,7 @@ session_start();
 
 
                           <div class="gallery">
-                              <a href=""><img src="images/imagesfe/bokchoy.jpg" class="fruit2"></a>
+                              <a href=""><img src="images/imagesfe/bokchoy.JPG" class="fruit2"></a>
                               <h4><a href="#">Fresh Organic Baby Bok Choy - 1lb</a></h4>
                               <div class="rating">
                                   <i class="fa fa-star"></i>
@@ -142,7 +142,7 @@ session_start();
 
 
                       <div class="gallery">
-                          <a href=""><img src="images/imagesfe/broccoli.jpg" class="fruit2"></a>
+                          <a href=""><img src="images/imagesfe/broccoli.JPG" class="fruit2"></a>
                           <h4><a href="#">Fresh Organic Broccoli - 1lb</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
@@ -165,7 +165,7 @@ session_start();
 
 
                         <div class="gallery">
-                          <a href=""><img src="images/imagesfe/iceberg.jpg" class="fruit2"></a>
+                          <a href=""><img src="images/imagesfe/iceberg.JPG" class="fruit2"></a>
                           <h4><a href="#">Fresh Iceberg Lettuce - 1lb</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
@@ -189,7 +189,7 @@ session_start();
 
 
                                 <div class="gallery">
-                                    <a href=""><img src="images/imagesfe/radish.jpg" class="fruit2"></a>
+                                    <a href=""><img src="images/imagesfe/radish.JPG" class="fruit2"></a>
                                     <h4><a href="#">Fresh Organic Red Rashish - 1lb</a></h4>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>

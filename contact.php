@@ -13,9 +13,7 @@ session_start();
     </head>
 
     <body>
-
       <div class="container">
-
           <div class="navbar">
               <nav>
                   <div class="logo">
@@ -39,12 +37,11 @@ session_start();
                       <li><a href="contact.php">Contact Us</a></li>
                       <li><a href="">About</a></li>
                       <?php
-
-                      if(isset($_SESSION["sess_user"])){
+                        if(isset($_SESSION["sess_user"])){
                           echo "<li><a href='account.php'>Bob</a></li>";
                           echo "<li><a href='logout.php'>Logout</a></h2></li>";
                       } else
-                      { echo '<li><a href="account.php">Account</a></li>';
+                      {   echo '<li><a href="account.php">Account</a></li>';
                       }
                       ?>
                       <li><a href="">Checkout</a></li>

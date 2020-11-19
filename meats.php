@@ -94,7 +94,7 @@ session_start();
 
                   <div class= "container1">
                     <div class="gallery">
-                        <a href=""><img src="images/imagesfe/ribeye.jpg" class="fruit2"></a>
+                        <a href=""><img src="images/imagesfe/ribeye.JPG" class="fruit2"></a>
                         <h4><a href="#">American Angus Ribeye Steak - 12oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -118,7 +118,7 @@ session_start();
 
 
                             <div class="gallery">
-                                <a href=""><img src="images/imagesfe/groundbeef.jpg" class="fruit2"></a>
+                                <a href=""><img src="images/imagesfe/groundbeef.JPG" class="fruit2"></a>
                                 <h4><a href="#">Kroger 100% Pure Ground Beef - 16oz</a></h4>
                                     <div class="rating">
                                      <i class="fa fa-star"></i>
@@ -142,7 +142,7 @@ session_start();
 
 
                       <div class="gallery">
-                          <a href=""><img src="images/imagesfe/chickenb.jpg" class="fruit2"></a>
+                          <a href=""><img src="images/imagesfe/chickenb.JPG" class="fruit2"></a>
                           <h4><a href="#">Foster Farms Chicken Breast - 10oz</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
@@ -165,7 +165,7 @@ session_start();
 
 
                         <div class="gallery">
-                          <a href=""><img src="images/imagesfe/chickenwing.jpg" class="fruit2"></a>
+                          <a href=""><img src="images/imagesfe/chickenwing.JPG" class="fruit2"></a>
                           <h4><a href="#">Yorkshire Valley Chicken Wings - 24oz</a></h4>
                           <div class="rating">
                               <i class="fa fa-star"></i>
@@ -189,7 +189,7 @@ session_start();
 
 
                                 <div class="gallery">
-                                        <a href=""><img src="images/imagesfe/porkchop.jpg" class="fruit2"></a>
+                                        <a href=""><img src="images/imagesfe/porkchop.JPG" class="fruit2"></a>
                                         <h4><a href="#">Hormet Pork Chop Cut 40oz</a></h4>
                                         <div class="rating">
                                             <i class="fa fa-star"></i>

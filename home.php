@@ -13,9 +13,7 @@ session_start();
     <body>
         <!-- menu bar-->
         <div class="container">
-
             <div class="navbar">
-
                 <nav>
                     <div class="logo">
                         <a href="home.php"><img src="images/homepage/logo.png" with="125px">
@@ -38,7 +36,6 @@ session_start();
                         <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="">About</a></li>
                         <?php
-
                         if(isset($_SESSION["sess_user"])){
                             echo "<li><a href='account.php'>Bob</a></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
