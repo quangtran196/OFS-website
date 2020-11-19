@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -9,10 +12,14 @@
       <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
-  max-width: 1700px;
-  margin: auto;
-  background: #f2f2f2;
-  overflow: auto;
+    display: none;
+   position: block;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-left: 75px;
+   margin-right: 75px;
+   transition: transform 0.8s;
 }
 .gallery{
     margin: 1px;
@@ -22,16 +29,14 @@
 }
 .gallery img {
   width:100%;
-  height:auto;
+  height: auto;
 }
         </style>
     </head>
     <body>
         <!-- menu bar-->
         <div class="container">
-
             <div class="navbar">
-
                 <nav>
                     <div class="logo">
                         <a href="home.php"><img src="images/homepage/logo.png" with="125px">
@@ -53,7 +58,15 @@
                         </li>
                         <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="account.php">Account</a></li>
+                        <?php
+
+                        if(isset($_SESSION["sess_user"])){
+                            echo "<li><a href='account.php'>Bob</a></li>";
+                            echo "<li><a href='logout.php'>Logout</a></h2></li>";
+                        } else
+                        { echo '<li><a href="account.php">Account</a></li>';
+                        }
+                        ?>
                         <li><a href="">Checkout</a></li>
                     </ul>
                 </nav>
@@ -70,18 +83,18 @@
         <div class="features">
             <h1>Fresh Vegetables</h1>
             <ul>
-                <li><a href="#">Fruits</a></li>
-                <li><a href="#">Vegetables</a></li>
-                <li><a href="#">Meats</a></li>
-                <li><a href="#">Dairy</a></li>
-                <li><a href="#">Snacks</a></li>
-                <li><a href="#">Canned Food</a></li>
+              <li><a href="fruit.html">Fruits</a></li>
+              <li><a href="veggies.html">Vegetables</a></li>
+              <li><a href="meats.html">Meats</a></li>
+              <li><a href="dairy.html">Dairy</a></li>
+              <li><a href="#">Snacks</a></li>
+              <li><a href="cannedfood.html">Canned Food</a></li>
             </ul>
             </div>
 
-                  <div class= "container-catagory">
+                  <div class= "container1">
                     <div class="gallery">
-                        <a href=""><img src="images/imagesfe/celery.jpg" class="fruit2"></a>
+                        <a href=""><img src="images/imagesfe/celery.JPG" class="fruit2"></a>
                         <h4><a href="#">Fresh Organic Celery - 0.5lb</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -97,25 +110,26 @@
                         <form action="/addcart.php" method= "post">
                           <input type ="number" value="0">
                           <input type="submit" value="Add to cart">
-                        </form>
-                    </div>
+                          </form>
+                          </div>
 
 
 
 
-                      <div class="gallery">
-                          <a href=""><img src="images/imagesfe/bokchoy.jpg" class="fruit2"></a>
-                          <h4><a href="#">Fresh Organic Baby Bok Choy - 1lb</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
 
-                          <p>1lb</p>
-                          <p>$2.79</p>
-                      </div>
+                          <div class="gallery">
+                              <a href=""><img src="images/imagesfe/bokchoy.JPG" class="fruit2"></a>
+                              <h4><a href="#">Fresh Organic Baby Bok Choy - 1lb</a></h4>
+                              <div class="rating">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+
+                              <p>1lb</p>
+                              <p>$2.79</p>
                       <label> Quantity: </label>
                       <form action="/addcart.php" method= "post">
                       <input type ="number" value="0">
@@ -127,18 +141,18 @@
 
 
 
-                    <div class="gallery">
-                        <a href=""><img src="images/imagesfe/broccoli.jpg" class="fruit2"></a>
-                        <h4><a href="#">Fresh Organic Broccoli - 1lb</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <p>1lb</p>
-                        <p>$4.49</p>
+                      <div class="gallery">
+                          <a href=""><img src="images/imagesfe/broccoli.JPG" class="fruit2"></a>
+                          <h4><a href="#">Fresh Organic Broccoli - 1lb</a></h4>
+                          <div class="rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                          </div>
+                          <p>1lb</p>
+                          <p>$4.49</p>
 
                         <label> Quantity: </label>
                         <form action="/addcart.php" method= "post">
@@ -150,18 +164,18 @@
 
 
 
-                              <div class="gallery">
-                                <a href=""><img src="images/imagesfe/iceberg.jpg" class="fruit2"></a>
-                                <h4><a href="#">Fresh Iceberg Lettuce - 1lb</a></h4>
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>1lb</p>
-                                <p>$2.54</p>
+                        <div class="gallery">
+                          <a href=""><img src="images/imagesfe/iceberg.JPG" class="fruit2"></a>
+                          <h4><a href="#">Fresh Iceberg Lettuce - 1lb</a></h4>
+                          <div class="rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                          </div>
+                          <p>1lb</p>
+                          <p>$2.54</p>
 
                                 <label> Quantity: </label>
                                 <form action="/addcart.php" method= "post">
@@ -174,18 +188,18 @@
 
 
 
-                          <div class="gallery">
-                              <a href=""><img src="images/imagesfe/radish.jpg" class="fruit2"></a>
-                              <h4><a href="#">Fresh Organic Red Rashish - 1lb</a></h4>
-                              <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                              </div>
-                              <p>1lb</p>
-                              <p>$5.99</p>
+                                <div class="gallery">
+                                    <a href=""><img src="images/imagesfe/radish.JPG" class="fruit2"></a>
+                                    <h4><a href="#">Fresh Organic Red Rashish - 1lb</a></h4>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>1lb</p>
+                                    <p>$5.99</p>
 
                               <label> Quantity: </label>
                               <form action="/addcart.php" method= "post">
@@ -193,29 +207,14 @@
                               <input type="submit" value="Add to cart">
                               </form>
                               </div>
+                                </div>
 
 
-                          <div class="gallery">
-                                  <a href=""><img src="images/imagesfe/spinach.jpg" class="fruit2"></a>
-                                  <h4><a href="#">Fresh Organic Spinach - O.5lb </a></h4>
-                                  <div class="rating">
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                  </div>
-                                  <p>0.5lb</p>
-                                  <p>$6.99</p>
+                    </div>
+                </div>
 
-                                  <label> Quantity: </label>
-                                  <form action="/addcart.php" method= "post">
-                                  <input type ="number" value="0">
-                                  <input type="submit" value="Add to cart">
-                                  </form>
-                                  </div>
-                            </div>
-
+            </div>
+        </div>
         <!-- end of feature products -->
 
 
