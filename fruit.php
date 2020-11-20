@@ -138,7 +138,7 @@ session_start();
 
                     <div class="gallery">
                         <a href=""><img src="images/imagesfe/sberry.jpg" class="fruit2"></a>
-                        <br></br><h4><a href="#"> Produce Unbranded Hot House Strawberries</a></h4>
+                        <h4><a href="#"> Produce Unbranded Hot House Strawberries</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -183,7 +183,7 @@ session_start();
 
                           <div class="gallery">
                                 <a href=""><img src="images/imagesfe/ki.jpg" class="fruit2"></a>
-                                <br></br>  <br></br>  <br></br>   <br>
+
                               <h4><a href="#">Kiwis</a></h4>
                               <div class="rating">
                                   <i class="fa fa-star"></i>
