@@ -41,7 +41,7 @@ session_start();
                     <li><a href="">About</a></li>
                     <?php
                     if(isset($_SESSION["sess_user"])){
-                        echo "<li><a href='account.php'>Bob</a></li>";
+                        echo $_SESSION['sess_user'];
                         echo "<li><a href='logout.php'>Logout</a></h2></li>";
                     } else
                     { echo '<li><a href="account.php">Account</a></li>';
