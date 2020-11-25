@@ -6,13 +6,12 @@ session_start();
   <head>
     <meta charset="utf-8">
         <title>Registration/Login Page</title>
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0">
-      <link rel="stylesheet" href="./css/accstyle.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    <!-- <meta name="viewport" content="width=device-width,
+    initial-scale=1.0"> -->
+      <link rel="stylesheet" href="./css/accountstyle.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   </head>
   <body>
 <!-- menu bar-->
@@ -38,10 +37,10 @@ session_start();
                         </div>
                     </li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="">About</a></li>
                     <?php
                     if(isset($_SESSION["sess_user"])){
-                        echo $_SESSION['sess_user'];
+                        echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
+                        echo "<li><a href='profile.php'>Profile</a></h2></li>";
                         echo "<li><a href='logout.php'>Logout</a></h2></li>";
                     } else
                     { echo '<li><a href="account.php">Account</a></li>';
@@ -80,9 +79,24 @@ session_start();
           <form id="RegForm" action="/register.php" method="post">
             <input type="text" placeholder="Username" name="username">
             <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Confirm Password" name="passconfirm">
+            <input type="email" placeholder="E-Mail" name="email">
+            <input type="email" placeholder="E-Mail Confirm" name="emailconfirm">
             <button type="submit" class="btn">Register</button>
           </form>
-
+          <div class="msg">
+              <?php
+                if( isset($_SESSION['Error']) )
+                    {
+                      echo $_SESSION['Error'];
+                      unset($_SESSION['Error']);
+                    }
+                elseif (isset($_SESSION['success'])){
+                    echo $_SESSION['success'];
+                    unset($_SESSION['success']);
+                    }
+               ?>
+          </div>
         </div>
       </div>
     </div>
