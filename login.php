@@ -16,7 +16,7 @@
       }
 
       // select user
-      $sql = "SELECT password FROM students WHERE username
+      $sql = "SELECT password FROM accounts WHERE username
           = '$username'";
       $results = mysqli_query($conn, $sql);
 
@@ -25,7 +25,7 @@
         if ($row["password"] === $password) { //Checks if the password matches
           session_start();
           $logged_in = true; //Logging in
-          $sql = "SELECT * FROM students"; //Selecting all the students
+          $sql = "SELECT * FROM accounts"; //Selecting all the accounts
           $results = mysqli_query($conn, $sql);
           $_SESSION['sess_user']=$username;
           header("Location: home.php");
