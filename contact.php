@@ -29,7 +29,6 @@ session_start();
                                   <li><a href="veggies.php">Vegetables</a></li>
                                   <li><a href="meats.php">Meats</a></li>
                                   <li><a href="dairy.php">Dairy</a></li>
-                                  <li><a href="#">Snacks</a></li>
                                   <li><a href="cannedfood.php">Canned Food</a></li>
                               </ul>
                           </div>

@@ -5,6 +5,82 @@ body {
   width:100%;
 }
 
+/* Menu bar */
+.container{
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+.logo img{
+    float: left;
+    position: relative;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav {
+    flex: 1;
+    background: gray;
+    padding: 10px 0;
+    background: #FFD367;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+
+}
+nav ul li{
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background: #FFD367;
+}
+
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+}
+
+.navbar ul li:hover .sub-menu ul {
+    display: block;
+    padding-top: 10px;
+
+}
+.navbar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+/* End of menu */
 h2 {
   text-align: left;
   margin-left: 40px;

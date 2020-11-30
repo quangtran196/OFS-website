@@ -55,7 +55,6 @@ session_start();
                                     <li><a href="veggies.php">Vegetables</a></li>
                                     <li><a href="meats.php">Meats</a></li>
                                     <li><a href="dairy.php">Dairy</a></li>
-                                    <li><a href="#">Snacks</a></li>
                                     <li><a href="cannedfood.php">Canned Food</a></li>
                                 </ul>
                             </div>
@@ -79,19 +78,22 @@ session_start();
         <!-- end of menu bar -->
 
         <div class="body1">
-            <img src="images/imagesfe/main-page.jpg" alt="" height="200">
+            <div class="img-container">
+                <img src="images/imagesfe/diarym.jpg" alt="" class="main-fruit">
+                <div class="overlay">
+                </div>
+            </div>
         </div>
 
         <!-- feature products -->
         <div class="features">
             <h1>Dairy</h1>
             <ul>
-              <li><a href="fruit.php">Fruits</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Meats</a></li>
-              <li><a href="dairy.php">Dairy</a></li>
-              <li><a href="#">Snacks</a></li>
-              <li><a href="#">Canned Food</a></li>
+                <li><a href="fruit.php">Fruits</a></li>
+                <li><a href="veggies.php">Vegetables</a></li>
+                <li><a href="meats.php">Meats</a></li>
+                <li><a href="dairy.php">Dairy</a></li>
+                <li><a href="cannedfood.php">Canned Food</a></li>
             </ul>
             </div>
 
