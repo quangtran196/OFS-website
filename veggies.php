@@ -10,29 +10,47 @@ session_start();
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
       <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
-    display: none;
-   position: block;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-left: 75px;
-   margin-right: 75px;
-   transition: transform 0.8s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
-.gallery{
-    margin: 1px;
-    border: 1.25pc solid #ccc;
-    float: left;
-    width: 415px;
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.gallery img {
-  width:100%;
-  height: auto;
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgrey;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
 }
-        </style>
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+      </style>
     </head>
     <body>
         <!-- menu bar-->
@@ -67,6 +85,12 @@ session_start();
                         }
                         ?>
                         <li><a href="checkout.php">Checkout</a></li>
+
+                        <!-- Product CART function -->
+
+                        <li class = "cart">
+                          <a href = "cart.php">
+                            <ion-icon name ="basket"></ion-icon><span>0</span>
                     </ul>
                 </nav>
             </div>
@@ -93,131 +117,54 @@ session_start();
                 <li><a href="cannedfood.php">Canned Food</a></li>
             </ul>
             </div>
+        <!-- end of feature products -->
 
-                  <div class= "container1">
-                    <div class="gallery">
-                        <a href=""><img src="images/imagesfe/celery.jpg" class="fruit2"></a>
-                        <h4><a href="#">Fresh Organic Celery - 0.5lb</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <p>0.5lb</p>
-                        <p>$1.95</p>
+        <!-- Products -->
+              <div class = "container1">
+                  <div class = "image">
+                      <img src = "images/imagesfe/celery2.jpg" alt="fruit2">
+                      <h3> Fresh Organic Celery </h3>
+                      <h3> 0.5lb </h3>
+                      <h3> $1.95 </h3>
+                      <a class="add-cart cart1" href="#"> Add to Cart</a>
+                  </div>
 
-                          <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                          <input type ="number" value="0">
-                          <input type="submit" value="Add to cart">
-                          </form>
-                          </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/bokchoy2.jpg" alt="fruit2">
+                      <h3> Fresh Organic Baby Bok Choy </h3>
+                      <h3> 1.0lb </h3>
+                      <h3> $2.79 </h3>
+                      <a class="add-cart cart2" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/broccoli2.jpg" alt="fruit2">
+                      <h3> Fresh Organic Broccoli </h3>
+                      <h3> 1.0lb </h3>
+                      <h3> $4.49 </h3>
+                      <a class="add-cart cart3" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/iceberg2.jpg" alt="fruit2">
+                      <h3> Fresh Iceberg Lettuce </h3>
+                      <h3> 1.0lb </h3>
+                      <h3> $2.54 </h3>
+                      <a class="add-cart cart4" href="#"> Add to Cart</a>
+                  </div>
 
-
-
-                          <div class="gallery">
-                              <a href=""><img src="images/imagesfe/bokchoy.jpg" class="fruit2"></a>
-                              <h4><a href="#">Fresh Organic Baby Bok Choy - 1lb</a></h4>
-                              <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                              </div>
-
-                              <p>1lb</p>
-                              <p>$2.79</p>
-                      <label> Quantity: </label>
-                      <form action="/addcart.php" method= "post">
-                      <input type ="number" value="0">
-                      <input type="submit" value="Add to cart">
-                      </form>
-                      </div>
-
-
-
-
-
-                      <div class="gallery">
-                          <a href=""><img src="images/imagesfe/broccoli.jpg" class="fruit2"></a>
-                          <h4><a href="#">Fresh Organic Broccoli - 1lb</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                          </div>
-                          <p>1lb</p>
-                          <p>$4.49</p>
-
-                        <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                        <input type ="number" value="0">
-                        <input type="submit" value="Add to cart">
-                        </form>
-                        </div>
-
-
-
-
-                        <div class="gallery">
-                          <a href=""><img src="images/imagesfe/iceberg.jpg" class="fruit2"></a>
-                          <h4><a href="#">Fresh Iceberg Lettuce - 1lb</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                          </div>
-                          <p>1lb</p>
-                          <p>$2.54</p>
-
-                                <label> Quantity: </label>
-                                <form action="/addcart.php" method= "post">
-                                <input type ="number" value="0">
-                                <input type="submit" value="Add to cart">
-                                </form>
-                                </div>
-
-
-
-
-
-                                <div class="gallery">
-                                    <a href=""><img src="images/imagesfe/radish.jpg" class="fruit2"></a>
-                                    <h4><a href="#">Fresh Organic Red Rashish - 1lb</a></h4>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p>1lb</p>
-                                    <p>$5.99</p>
-
-                              <label> Quantity: </label>
-                              <form action="/addcart.php" method= "post">
-                              <input type ="number" value="0">
-                              <input type="submit" value="Add to cart">
-                              </form>
-                              </div>
-                                </div>
-
-
-                    </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/radish2.jpg" alt="fruit2">
+                      <h3> Fresh Organic Red Radish </h3>
+                      <h3> 1.0lb </h3>
+                      <h3> $5.99 </h3>
+                      <a class="add-cart cart5" href="#"> Add to Cart</a>
+                  </div>
                 </div>
 
-            </div>
-        </div>
-        <!-- end of feature products -->
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="cart.js"></script>
 
 
     </body>
