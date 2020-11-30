@@ -9,6 +9,7 @@ session_start();
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
@@ -69,6 +70,12 @@ session_start();
                         }
                         ?>
                         <li><a href="checkout.php">Checkout</a></li>
+
+                        <!-- Product CART function -->
+
+                        <li class = "cart">
+                          <a href = "cart.php">
+                            <ion-icon name ="basket"></ion-icon><span>0</span>
                     </ul>
                 </nav>
             </div>
@@ -204,6 +211,7 @@ session_start();
 
 
         <!-- end of feature products -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 
     </body>
