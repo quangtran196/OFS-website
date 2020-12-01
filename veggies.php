@@ -70,7 +70,7 @@ session_start();
                                     <li><a href="veggies.php">Vegetables</a></li>
                                     <li><a href="meats.php">Meats</a></li>
                                     <li><a href="dairy.php">Dairy</a></li>
-                                    <li><a href="#">Snacks</a></li>
+                                    <li><a href="snacks.php">Snacks</a></li>
                                     <li><a href="cannedfood.php">Canned Food</a></li>
                                 </ul>
                             </div>
@@ -162,7 +162,7 @@ session_start();
 
 
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <script src="cart.js"></script>
+        <script src="veggiecart.js"></script>
 
 
     </body>

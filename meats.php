@@ -5,7 +5,7 @@ session_start();
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Meat Products</title>
+        <title>Meats</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,26 +13,43 @@ session_start();
       <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
-    display: none;
-   position: block;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-left: 75px;
-   margin-right: 75px;
-   transition: transform 0.8s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
-.gallery{
-    margin: 1px;
-    border: 1.25pc solid #ccc;
-    float: left;
-    width: 415px;
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.gallery img {
-  width:100%;
-  height: auto;
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgrey;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
 }
-        </style>
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9,
+.image:hover .cart10 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+      </style>
     </head>
     <body>
         <!-- menu bar-->
@@ -52,7 +69,7 @@ session_start();
                                     <li><a href="veggies.php">Vegetables</a></li>
                                     <li><a href="meats.php">Meats</a></li>
                                     <li><a href="dairy.php">Dairy</a></li>
-                                    <li><a href="#">Snacks</a></li>
+                                    <li><a href="snacks.php">Snacks</a></li>
                                     <li><a href="cannedfood.php">Canned Food</a></li>
                                 </ul>
                             </div>
@@ -97,132 +114,54 @@ session_start();
               <li><a href="cannedfood.html">Canned Food</a></li>
             </ul>
             </div>
+        <!-- end of feature products -->
 
-                  <div class= "container1">
-                    <div class="gallery">
-                        <a href=""><img src="images/imagesfe/ribeye.jpg" class="fruit2"></a>
-                        <h4><a href="#">American Angus Ribeye Steak - 12oz</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <p>12oz</p>
-                        <p>$14.95</p>
+        <!-- Products -->
+              <div class = "container1">
+                  <div class = "image">
+                      <img src = "images/imagesfe/ribeye.JPG" alt="fruit2">
+                      <h3> American Angus Ribeye Steak </h3>
+                      <h3> 12.0oz </h3>
+                      <h3> $14.95 </h3>
+                      <a class="add-cart cart6" href="#"> Add to Cart</a>
+                  </div>
 
-                          <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                          <input type ="number" value="0">
-                          <input type="submit" value="Add to cart">
-                          </form>
-                          </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/groundbeef.JPG" alt="fruit2">
+                      <h3> Kroger 100% Pure Ground Beef  </h3>
+                      <h3> 16.0oz </h3>
+                      <h3> $8.79 </h3>
+                      <a class="add-cart cart7" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/chickenb.JPG" alt="fruit2">
+                      <h3> Foster Farms Chicken Breast </h3>
+                      <h3> 10.0oz </h3>
+                      <h3> $13.49 </h3>
+                      <a class="add-cart cart8" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/chickenwing.JPG" alt="fruit2">
+                      <h3> Yorkshire Valley Chicken Wings </h3>
+                      <h3> 24.0oz </h3>
+                      <h3> $14.54 </h3>
+                      <a class="add-cart cart9" href="#"> Add to Cart</a>
+                  </div>
 
-
-
-                            <div class="gallery">
-                                <a href=""><img src="images/imagesfe/groundbeef.jpg" class="fruit2"></a>
-                                <h4><a href="#">Kroger 100% Pure Ground Beef - 16oz</a></h4>
-                                    <div class="rating">
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                     <i class="fa fa-star"></i>
-                                   </div>
-
-                                <p>16oz</p>
-                                <p>$8.79</p>
-                      <label> Quantity: </label>
-                      <form action="/addcart.php" method= "post">
-                      <input type ="number" value="0">
-                      <input type="submit" value="Add to cart">
-                      </form>
-                      </div>
-
-
-
-
-
-                      <div class="gallery">
-                          <a href=""><img src="images/imagesfe/chickenb.jpg" class="fruit2"></a>
-                          <h4><a href="#">Foster Farms Chicken Breast - 10oz</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                          </div>
-                          <p>10oz</p>
-                          <p>$13.49</p>
-
-                        <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                        <input type ="number" value="0">
-                        <input type="submit" value="Add to cart">
-                        </form>
-                        </div>
-
-
-
-
-                        <div class="gallery">
-                          <a href=""><img src="images/imagesfe/chickenwing.jpg" class="fruit2"></a>
-                          <h4><a href="#">Yorkshire Valley Chicken Wings - 24oz</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                          </div>
-                          <p>24oz</p>
-                          <p>$14.54</p>
-
-                                <label> Quantity: </label>
-                                <form action="/addcart.php" method= "post">
-                                <input type ="number" value="0">
-                                <input type="submit" value="Add to cart">
-                                </form>
-                                </div>
-
-
-
-
-
-                                <div class="gallery">
-                                        <a href=""><img src="images/imagesfe/porkchop.jpg" class="fruit2"></a>
-                                        <h4><a href="#">Hormet Pork Chop Cut 40oz</a></h4>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <p>40oz</p>
-                                        <p>$25.99</p>
-
-                              <label> Quantity: </label>
-                              <form action="/addcart.php" method= "post">
-                              <input type ="number" value="0">
-                              <input type="submit" value="Add to cart">
-                              </form>
-                              </div>
-                                </div>
-
-
-                    </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/porkchop.JPG" alt="fruit2">
+                      <h3> Hormet Pork Chop Cut </h3>
+                      <h3> 40.0oz </h3>
+                      <h3> $25.99 </h3>
+                      <a class="add-cart cart10" href="#"> Add to Cart</a>
+                  </div>
                 </div>
 
-            </div>
-        </div>
-        <!-- end of feature products -->
+
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="meatscart.js"></script>
 
 
     </body>

@@ -10,33 +10,46 @@ session_start();
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
-      <link rel="stylesheet" href="./css/style.css">
-
-        <link rel="stylesheet" href="./css/category-style.css">
-
+      <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
-    display: none;
-   position: block;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-left: 75px;
-   margin-right: 75px;
-   transition: transform 0.8s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
-.gallery{
-    margin: 1px;
-    border: 1.25pc solid #ccc;
-    float: left;
-    width: 415px;
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.gallery img {
-  width:100%;
-  height: auto;
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgrey;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
 }
-        </style>
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+      </style>
     </head>
     <body>
         <!-- menu bar-->
@@ -56,7 +69,7 @@ session_start();
                                     <li><a href="veggies.php">Vegetables</a></li>
                                     <li><a href="meats.php">Meats</a></li>
                                     <li><a href="dairy.php">Dairy</a></li>
-                                    <li><a href="#">Snacks</a></li>
+                                    <li><a href="snacks.php">Snacks</a></li>
                                     <li><a href="cannedfood.php">Canned Food</a></li>
                                 </ul>
                             </div>
@@ -91,141 +104,64 @@ session_start();
 
         <!-- feature products -->
         <div class="features">
-            <h1>Dairy</h1>
+            <h1>Dairy Products</h1>
             <ul>
-              <li><a href="fruit.php">Fruits</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Meats</a></li>
-              <li><a href="dairy.php">Dairy</a></li>
+              <li><a href="fruit.html">Fruits</a></li>
+              <li><a href="veggies.html">Vegetables</a></li>
+              <li><a href="meats.html">Meats</a></li>
+              <li><a href="dairy.html">Dairy</a></li>
               <li><a href="#">Snacks</a></li>
-              <li><a href="#">Canned Food</a></li>
+              <li><a href="cannedfood.html">Canned Food</a></li>
             </ul>
             </div>
+        <!-- end of feature products -->
 
-                  <div class= "container1">
-                    <div class="gallery">
-                        <a href=""><img src="images/imagesfe/milk.jpg" class="fruit2"></a>
-                        <h4><a href="#">Daily Pure low fat Milk - 1 gal</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <p>8.6 lbs</p>
-                        <p>$3.35</p>
+        <!-- Products -->
+              <div class = "container1">
+                  <div class = "image">
+                      <img src = "images/imagesfe/milk.jpg" alt="fruit2">
+                      <h3> Daily Pure low fat Milk </h3>
+                      <h3> 8.6 lbs </h3>
+                      <h3> $3.35 </h3>
+                      <a class="add-cart cart1" href="#"> Add to Cart</a>
+                  </div>
 
-                          <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                          <input type ="number" value="0">
-                          <input type="submit" value="Add to cart">
-                          </form>
-                          </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/cheese.jpg" alt="fruit2">
+                      <h3> Kraft American Cheese </h3>
+                      <h3> 1.0lb </h3>
+                      <h3> $5.39 </h3>
+                      <a class="add-cart cart2" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/icecream.jpeg" alt="fruit2">
+                      <h3> Breyers Original Chocolate Ice Cream </h3>
+                      <h3> 3.0 lbs </h3>
+                      <h3> $4.49 </h3>
+                      <a class="add-cart cart3" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/yogurt.jpeg" alt="fruit2">
+                      <h3> Yoplait Original Yogurt Strawberry </h3>
+                      <h3> 2.0 lb </h3>
+                      <h3> $2.14 </h3>
+                      <a class="add-cart cart4" href="#"> Add to Cart</a>
+                  </div>
 
-
-                      <div class="gallery">
-                          <a href=""><img src="images/imagesfe/cheese.jpg" class="fruit2"></a>
-                          <h4><a href="#">Kraft American Cheese - 24ct</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-
-                          <p>1.0 lbs</p>
-                          <p>$5.39</p>
-                      </div>
-                      <label> Quantity: </label>
-                      <form action="/addcart.php" method= "post">
-                      <input type ="number" value="0">
-                      <input type="submit" value="Add to cart">
-                      </form>
-                      </div>
-
-
-
-
-
-                    <div class="gallery">
-                        <a href=""><img src="images/imagesfe/icecream.jpeg" class="fruit2"></a>
-                        <h4><a href="#"> Breyers Original Chocolate Ice Cream - 48oz</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <p>3.0 lbs</p>
-                        <p>$4.49</p>
-
-                        <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                        <input type ="number" value="0">
-                        <input type="submit" value="Add to cart">
-                        </form>
-                        </div>
-
-
-
-
-                              <div class="gallery">
-                                <a href=""><img src="images/imagesfe/yogurt.jpeg" class="fruit2"></a>
-                                <h4><a href="#">	Yoplait Original Yogurt Strawberry - 32 oz</a></h4>
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>2.0 lbs</p>
-                                <p>$2.14</p>
-
-                                <label> Quantity: </label>
-                                <form action="/addcart.php" method= "post">
-                                <input type ="number" value="0">
-                                <input type="submit" value="Add to cart">
-                                </form>
-                                </div>
-
-
-
-
-
-                          <div class="gallery">
-                              <a href=""><img src="images/imagesfe/butter.jpeg" class="fruit2"></a>
-                              <h4><a href="#">Land O'Lakes Salted Butter - 4 sticks</a></h4>
-                              <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                              </div>
-                              <p> 1.0 lbs</p>
-                              <p>$5.99</p>
-
-                              <label> Quantity: </label>
-                              <form action="/addcart.php" method= "post">
-                              <input type ="number" value="0">
-                              <input type="submit" value="Add to cart">
-                              </form>
-                              </div>
-                                </div>
-
-
-                    </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/butter.jpeg" alt="fruit2">
+                      <h3> Land O'Lakes Salted Butter </h3>
+                      <h3> 1.0lb </h3>
+                      <h3> $5.99 </h3>
+                      <a class="add-cart cart5" href="#"> Add to Cart</a>
+                  </div>
                 </div>
 
-            </div>
-        </div>
-        <!-- end of feature products -->
+
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="dairycart.js"></script>
 
 
     </body>

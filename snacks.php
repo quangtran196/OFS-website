@@ -5,7 +5,7 @@ session_start();
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Canned Food</title>
+        <title>Snacks</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -104,7 +104,7 @@ session_start();
 
         <!-- feature products -->
         <div class="features">
-            <h1>Canned Foods</h1>
+            <h1>Snacking Products</h1>
             <ul>
               <li><a href="fruit.html">Fruits</a></li>
               <li><a href="veggies.html">Vegetables</a></li>
@@ -119,49 +119,49 @@ session_start();
         <!-- Products -->
               <div class = "container1">
                   <div class = "image">
-                      <img src = "images/imagesfe/cannedcorn.jpg" alt="fruit2">
-                      <h3> Del Monte Whole Kernel Corn </h3>
-                      <h3> 15.25oz </h3>
-                      <h3> $4.95 </h3>
+                      <img src = "images/imagesfe/cheetos.jpg" alt="fruit2">
+                      <h3> Cheetos Crunchy Original </h3>
+                      <h3> 12oz </h3>
+                      <h3> $1.95 </h3>
                       <a class="add-cart cart1" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/cannedcorn2.jpg" alt="fruit2">
-                      <h3> Green Giant White Shoepeg Corn </h3>
-                      <h3> 15.25oz </h3>
-                      <h3> $4.79 </h3>
+                      <img src = "images/imagesfe/lays.jpg" alt="fruit2">
+                      <h3> Lays Classic </h3>
+                      <h3> 12oz </h3>
+                      <h3> $2.29 </h3>
                       <a class="add-cart cart2" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/cannedtomatos.jpg" alt="fruit2">
-                      <h3> Hunts Diced Tomatoes </h3>
+                      <img src = "images/imagesfe/doritos.jpg" alt="fruit2">
+                      <h3> Nacho Cheese Doritos </h3>
                       <h3> 12oz </h3>
-                      <h3> $2.49 </h3>
+                      <h3> $1.49 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/cannedtuna.jpg" alt="fruit2">
-                      <h3> American Light Meat Tuna </h3>
-                      <h3> 6.5oz </h3>
-                      <h3> $1.54 </h3>
+                      <img src = "images/imagesfe/takis.jpg" alt="fruit2">
+                      <h3> Takis Fuego </h3>
+                      <h3> 12oz </h3>
+                      <h3> $2.54 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/cornedbeef.jpg" alt="fruit2">
-                      <h3> Libby's Corned Beef </h3>
-                      <h3> 12oz </h3>
-                      <h3> $3.99 </h3>
+                      <img src = "images/imagesfe/pringles.jpg" alt="fruit2">
+                      <h3> Pringles Original </h3>
+                      <h3> 10oz </h3>
+                      <h3> $1.99 </h3>
                       <a class="add-cart cart5" href="#"> Add to Cart</a>
                   </div>
                 </div>
 
 
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <script src="cannedcart.js"></script>
+        <script src="snackscart.js"></script>
 
 
     </body>
