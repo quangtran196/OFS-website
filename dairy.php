@@ -86,7 +86,7 @@ session_start();
 
         <div class="body1">
             <div class="img-container">
-                <img src="images/imagesfe/diarym.jpg" alt="" class="main-fruit">
+                <img src="images/imagesfe/dairym.jpg" alt="" class="main-fruit">
                 <div class="overlay">
                 </div>
             </div>
