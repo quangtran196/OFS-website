@@ -99,7 +99,11 @@ session_start();
         <!-- end of menu bar -->
 
         <div class="body1">
-            <img src="images/imagesfe/main-page.jpg" alt="" height="200">
+            <div class="img-container">
+                <img src="images/homepage/main-page.jpg" alt="" class="main-fruit">
+                <div class="overlay">
+                </div>
+            </div>
         </div>
 
         <!-- feature products -->

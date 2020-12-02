@@ -99,19 +99,21 @@ session_start();
         <!-- end of menu bar -->
 
         <div class="body1">
-            <img src="images/imagesfe/main-page.jpg" alt="" height="200">
+            <div class="img-container">
+                <img src="images/imagesfe/meatm.jpg" alt="" class="main-fruit">
+                <div class="overlay">
+                </div>
+            </div>
         </div>
-
         <!-- feature products -->
         <div class="features">
             <h1>Fresh Meat Products</h1>
             <ul>
-              <li><a href="fruit.html">Fruits</a></li>
-              <li><a href="veggies.html">Vegetables</a></li>
-              <li><a href="meats.html">Meats</a></li>
-              <li><a href="dairy.html">Dairy</a></li>
-              <li><a href="#">Snacks</a></li>
-              <li><a href="cannedfood.html">Canned Food</a></li>
+                <li><a href="fruit.php">Fruits</a></li>
+                <li><a href="veggies.php">Vegetables</a></li>
+                <li><a href="meats.php">Meats</a></li>
+                <li><a href="dairy.php">Dairy</a></li>
+                <li><a href="cannedfood.php">Canned Food</a></li>
             </ul>
             </div>
         <!-- end of feature products -->
