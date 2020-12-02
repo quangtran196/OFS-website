@@ -36,8 +36,8 @@ session_start();
                         </li>
                         <li><a href="contact.php">Contact Us</a></li>
                         <?php
-                        if(isset($_SESSION["sess_user"])){
-                            echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
+                        if(isset($_SESSION["sess_email"])){
+                            echo "Hello, "; echo $_SESSION['sess_email']; echo "!";
                             echo "<li><a href='profile.php'>Profile</a></h2></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
                         } else

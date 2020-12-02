@@ -49,7 +49,7 @@ session_start();
                     <li><a href="checkout.php">Checkout</a></li>
                     <li class = "cart">
                       <a href = "cart.php">
-                        <ion-icon name ="basket"></ion-icon><span>0</span>
+                        <ion-icon name ="basket"></ion-icon><span>0</span></a>
                 </ul>
             </nav>
         </div>
@@ -76,15 +76,12 @@ session_start();
             <input type="text" placeholder="Username" name="username">
             <input type="password" placeholder="Password" name="password">
             <button type="submit" class="btn">Login</button>
-            <a href="">Forgot Password</a>
           </form>
 
           <form id="RegForm" action="/register.php" method="post">
             <input type="text" placeholder="Username" name="username">
             <input type="password" placeholder="Password" name="password">
-            <input type="password" placeholder="Confirm Password" name="passconfirm">
-            <input type="email" placeholder="E-Mail" name="email">
-            <input type="email" placeholder="E-Mail Confirm" name="emailconfirm">
+            <input type="text" placeholder="E-Mail" name="email">
             <button type="submit" class="btn">Register</button>
           </form>
           <div class="msg">
