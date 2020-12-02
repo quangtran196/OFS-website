@@ -5,7 +5,7 @@ session_start();
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Dairy</title>
+        <title>Snacks</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -99,16 +99,12 @@ session_start();
         <!-- end of menu bar -->
 
         <div class="body1">
-            <div class="img-container">
-                <img src="images/imagesfe/dairym.jpg" alt="" class="main-fruit">
-                <div class="overlay">
-                </div>
-            </div>
+            <img src="images/imagesfe/main-page.jpg" alt="" height="200">
         </div>
 
         <!-- feature products -->
         <div class="features">
-            <h1>Dairy Products</h1>
+            <h1>Snacking Products</h1>
             <ul>
               <li><a href="fruit.html">Fruits</a></li>
               <li><a href="veggies.html">Vegetables</a></li>
@@ -123,49 +119,49 @@ session_start();
         <!-- Products -->
               <div class = "container1">
                   <div class = "image">
-                      <img src = "images/imagesfe/milk.jpg" alt="fruit2">
-                      <h3> Daily Pure low fat Milk </h3>
-                      <h3> 8.6 lbs </h3>
-                      <h3> $3.35 </h3>
+                      <img src = "images/imagesfe/cheetos.jpg" alt="fruit2">
+                      <h3> Cheetos Crunchy Original </h3>
+                      <h3> 12oz </h3>
+                      <h3> $1.95 </h3>
                       <a class="add-cart cart1" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/cheese.jpg" alt="fruit2">
-                      <h3> Kraft American Cheese </h3>
-                      <h3> 1.0lb </h3>
-                      <h3> $5.39 </h3>
+                      <img src = "images/imagesfe/lays.jpg" alt="fruit2">
+                      <h3> Lays Classic </h3>
+                      <h3> 12oz </h3>
+                      <h3> $2.29 </h3>
                       <a class="add-cart cart2" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/icecream.jpeg" alt="fruit2">
-                      <h3> Breyers Original Chocolate Ice Cream </h3>
-                      <h3> 3.0 lbs </h3>
-                      <h3> $4.49 </h3>
+                      <img src = "images/imagesfe/doritos.jpg" alt="fruit2">
+                      <h3> Nacho Cheese Doritos </h3>
+                      <h3> 12oz </h3>
+                      <h3> $1.49 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/yogurt.jpeg" alt="fruit2">
-                      <h3> Yoplait Original Yogurt Strawberry </h3>
-                      <h3> 2.0 lb </h3>
-                      <h3> $2.14 </h3>
+                      <img src = "images/imagesfe/takis.jpg" alt="fruit2">
+                      <h3> Takis Fuego </h3>
+                      <h3> 12oz </h3>
+                      <h3> $2.54 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/butter.jpeg" alt="fruit2">
-                      <h3> Land O'Lakes Salted Butter </h3>
-                      <h3> 1.0lb </h3>
-                      <h3> $5.99 </h3>
+                      <img src = "images/imagesfe/pringles.jpg" alt="fruit2">
+                      <h3> Pringles Original </h3>
+                      <h3> 10oz </h3>
+                      <h3> $1.99 </h3>
                       <a class="add-cart cart5" href="#"> Add to Cart</a>
                   </div>
                 </div>
 
 
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <script src="dairycart.js"></script>
+        <script src="snackscart.js"></script>
 
 
     </body>

@@ -13,26 +13,43 @@ session_start();
       <link rel="stylesheet" href="./css/category-style.css">
         <style>
 .container1{
-    display: none;
-   position: block;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-left: 75px;
-   margin-right: 75px;
-   transition: transform 0.8s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
-.gallery{
-    margin: 1px;
-    border: 1.25pc solid #ccc;
-    float: left;
-    width: 415px;
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.gallery img {
-  width:100%;
-  height: auto;
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgrey;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
 }
-        </style>
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+      </style>
     </head>
     <body>
         <!-- menu bar-->
@@ -52,6 +69,7 @@ session_start();
                                     <li><a href="veggies.php">Vegetables</a></li>
                                     <li><a href="meats.php">Meats</a></li>
                                     <li><a href="dairy.php">Dairy</a></li>
+                                    <li><a href="snacks.php">Snacks</a></li>
                                     <li><a href="cannedfood.php">Canned Food</a></li>
                                 </ul>
                             </div>
@@ -90,7 +108,7 @@ session_start();
 
         <!-- feature products -->
         <div class="features">
-            <h1>Canned Food</h1>
+            <h1>Canned Foods</h1>
             <ul>
               <li><a href="fruit.php">Fruits</a></li>
               <li><a href="veggies.php">Vegetables</a></li>
@@ -99,132 +117,54 @@ session_start();
               <li><a href="cannedfood.php">Canned Food</a></li>
             </ul>
             </div>
+        <!-- end of feature products -->
 
-                  <div class= "container1">
-                    <div class="gallery">
-                        <a href=""><img src="images/imagesfe/cannedcorn.jpg" class="fruit2"></a>
-                        <h4><a href="#">Del Monte Whole Kernel Corn 15.25oz</a></h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <p>15.25oz</p>
-                        <p>$4.95</p>
+        <!-- Products -->
+              <div class = "container1">
+                  <div class = "image">
+                      <img src = "images/imagesfe/cannedcorn.jpg" alt="fruit2">
+                      <h3> Del Monte Whole Kernel Corn </h3>
+                      <h3> 15.25oz </h3>
+                      <h3> $4.95 </h3>
+                      <a class="add-cart cart1" href="#"> Add to Cart</a>
+                  </div>
 
-                          <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                          <input type ="number" value="0">
-                          <input type="submit" value="Add to cart">
-                          </form>
-                          </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/cannedcorn2.jpg" alt="fruit2">
+                      <h3> Green Giant White Shoepeg Corn </h3>
+                      <h3> 15.25oz </h3>
+                      <h3> $4.79 </h3>
+                      <a class="add-cart cart2" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/cannedtomatos.jpg" alt="fruit2">
+                      <h3> Hunts Diced Tomatoes </h3>
+                      <h3> 12oz </h3>
+                      <h3> $2.49 </h3>
+                      <a class="add-cart cart3" href="#"> Add to Cart</a>
+                  </div>
 
+                  <div class = "image">
+                      <img src = "images/imagesfe/cannedtuna.jpg" alt="fruit2">
+                      <h3> American Light Meat Tuna </h3>
+                      <h3> 6.5oz </h3>
+                      <h3> $1.54 </h3>
+                      <a class="add-cart cart4" href="#"> Add to Cart</a>
+                  </div>
 
-
-
-                          <div class="gallery">
-                              <a href=""><img src="images/imagesfe/cannedcorn2.jpg" class="fruit2"></a>
-                              <h4><a href="#">Green Giant White Shoepeg Corn 15.25oz</a></h4>
-                              <div class="rating">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                              </div>
-
-                              <p>15.25oz</p>
-                              <p>$4.79</p>
-                      <label> Quantity: </label>
-                      <form action="/addcart.php" method= "post">
-                      <input type ="number" value="0">
-                      <input type="submit" value="Add to cart">
-                      </form>
-                      </div>
-
-
-
-
-
-                      <div class="gallery">
-                          <a href=""><img src="images/imagesfe/cannedtomatos.jpg" class="fruit2"></a>
-                          <h4><a href="#">Hunts Diced Tomatoes 12oz</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                          </div>
-                          <p>12oz</p>
-                          <p>$2.49</p>
-
-                        <label> Quantity: </label>
-                        <form action="/addcart.php" method= "post">
-                        <input type ="number" value="0">
-                        <input type="submit" value="Add to cart">
-                        </form>
-                        </div>
-
-
-
-
-                        <div class="gallery">
-                          <a href=""><img src="images/imagesfe/cannedtuna.jpg" class="fruit2"></a>
-                          <h4><a href="#">American Light Meat Tuna - 6.5oz</a></h4>
-                          <div class="rating">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                          </div>
-                          <p>6.5oz</p>
-                          <p>$1.54</p>
-
-                                <label> Quantity: </label>
-                                <form action="/addcart.php" method= "post">
-                                <input type ="number" value="0">
-                                <input type="submit" value="Add to cart">
-                                </form>
-                                </div>
-
-
-
-
-
-                                <div class="gallery">
-                                    <a href=""><img src="images/imagesfe/cornedbeef.jpg" class="fruit2"></a>
-                                    <h4><a href="#">Libby's Corned Beef - 12oz</a></h4>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p>12oz</p>
-                                    <p>$3.99</p>
-
-                              <label> Quantity: </label>
-                              <form action="/addcart.php" method= "post">
-                              <input type ="number" value="0">
-                              <input type="submit" value="Add to cart">
-                              </form>
-                              </div>
-                                </div>
-
-
-                    </div>
+                  <div class = "image">
+                      <img src = "images/imagesfe/cornedbeef.jpg" alt="fruit2">
+                      <h3> Libby's Corned Beef </h3>
+                      <h3> 12oz </h3>
+                      <h3> $3.99 </h3>
+                      <a class="add-cart cart5" href="#"> Add to Cart</a>
+                  </div>
                 </div>
 
-            </div>
-        </div>
-        <!-- end of feature products -->
+
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="cannedcart.js"></script>
 
 
     </body>

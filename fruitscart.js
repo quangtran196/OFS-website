@@ -3,38 +3,38 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
 
   {
-    name: 'Fresh Organic Celery',
-    tag: 'celery2',
-    price: 1.95,
-    weight:'0.5IB',
+    name: 'Fresh Navel Orange',
+    tag: 'norange',
+    price: 4.88,
+    weight:'3Ibs',
     inCart: 0
   },
   {
-    name: 'Fresh Organic Baby Bok Choy',
-    tag: 'bokchoy2',
-    price: 2.79,
-    weight: '1.0IB',
+    name: 'Fresh Gala Apples',
+    tag: 'apple',
+    price: 2.67,
+    weight: '3Ibs',
     inCart: 0
   },
   {
-    name: 'Fresh Organic Broccoli',
-    tag: 'broccoli2',
-    price: 4.49,
-    weight: '1.0IB',
+    name: 'Produce Unbranded Hot House Strawberries',
+    tag: 'sberry',
+    price: 2.28,
+    weight: '1Ib',
     inCart: 0
   },
   {
-    name: 'Fresh Iceberg Lettuce',
-    tag: 'iceberg2',
-    price: 2.54,
-    weight: '1.0IB',
+    name: 'Organic Red seedless Grapes',
+    tag: 'redg',
+    price: 4.99,
+    weight: '1.5Ibs',
     inCart: 0
   },
   {
-    name: 'Fresh Organic Red Radish',
-    tag: 'radish2',
-    price: 5.99,
-    weight: '1.0IB',
+    name: 'Fresh Organic Kiwis',
+    tag: 'ki',
+    price: 3.98,
+    weight: '2Ibs',
     inCart: 0
   }
 ]
@@ -110,8 +110,6 @@ function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector(".products");
-
-  let cartCost = localStorage.getItem('totalCost');
   if(cartItems && productContainer) {
 
     productContainer.innerHTML = '';
@@ -123,31 +121,8 @@ function displayCart() {
           <span>${item.name}</span>
        </div>
        <div class= "price"> $${item.price}</div>
-
-       <div class="quantity">
-       <ion-icon name="decrease">
-       name ="arrow-dropleft-circle"></ion-icon>
-       <span> ${item.inCart}</span>
-       <ion-icon name="increase">
-       name ="arrow-dropright-circle"></ion-icon>
-       </div>
-       <div class ="total">
-            $${item.cart * item.price},00
-        </div>
-      `;
+      `
     });
-
-    productContainer.innerHTML +=
-      <div class ="basketTotalContainer">
-        <h4 class="basketTotalContainer">
-            Basket total
-        </h4>
-        <h4 class ="basketTotal>"
-          $${cartCost},00
-        </h4>
-
-    });
-
   }
 }
 

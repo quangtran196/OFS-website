@@ -3,38 +3,38 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
 
   {
-    name: 'Fresh Organic Celery',
-    tag: 'celery2',
-    price: 1.95,
-    weight:'0.5IB',
+    name: 'Del Monte Whole Kernel Corn',
+    tag: 'cannedcorn',
+    price: 4.95,
+    weight:'15.25oz',
     inCart: 0
   },
   {
-    name: 'Fresh Organic Baby Bok Choy',
-    tag: 'bokchoy2',
-    price: 2.79,
-    weight: '1.0IB',
+    name: 'Green Giant White Shoepeg Corn',
+    tag: 'cannedcorn2',
+    price: 4.79,
+    weight: '15.25oz',
     inCart: 0
   },
   {
-    name: 'Fresh Organic Broccoli',
-    tag: 'broccoli2',
-    price: 4.49,
-    weight: '1.0IB',
+    name: 'Hunts Diced Tomatoes',
+    tag: 'cannedtomatos',
+    price: 2.49,
+    weight: '12oz',
     inCart: 0
   },
   {
-    name: 'Fresh Iceberg Lettuce',
-    tag: 'iceberg2',
-    price: 2.54,
-    weight: '1.0IB',
+    name: 'American Light Meat Tuna',
+    tag: 'cannedtuna',
+    price: 1.54,
+    weight: '6.5oz',
     inCart: 0
   },
   {
-    name: 'Fresh Organic Red Radish',
-    tag: 'radish2',
-    price: 5.99,
-    weight: '1.0IB',
+    name: 'Libbys Corned Beef',
+    tag: 'cornedbeef',
+    price: 3.99,
+    weight: '12oz',
     inCart: 0
   }
 ]
