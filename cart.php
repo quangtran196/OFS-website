@@ -114,6 +114,8 @@ session_start();
                         <li class = "cart">
                           <a href = "cart.php">
                             <ion-icon name ="basket"></ion-icon><span>0</span>
+                          </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
