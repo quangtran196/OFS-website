@@ -77,15 +77,15 @@ session_start();
         <div class="catagory-main">
             <h1>Catagories</h1>
             <div class="row1">
-                <img src="images/homepage/orange.png" class="fruit">
-                <img src="images/homepage/vegetable.png" class="fruit2">
-                <img src="images/homepage/meat.png" class="fruit">
+                <a href="fruit.php"><img src="images/homepage/orange.png" class="fruit"></a>
+                <a href="veggies.php"><img src="images/homepage/vegetable.png" class="fruit2"></a>
+                <a href="meats.php"><img src="images/homepage/meat.png" class="fruit"></a>
             </div>
 
             <div class="row2">
-                <img src="images/homepage/dairy.png" class="fruit1">
-                <img src="images/homepage/candy.png" class="fruit2">
-                <img src="images/homepage/canned.png" class="fruit3">
+                <a href="dairy.php"><img src="images/homepage/dairy.png" class="fruit1"></a>
+                <a href="#"><img src="images/homepage/candy.png" class="fruit2"></a>
+                <a href="cannedfood.php"><img src="images/homepage/canned.png" class="fruit3"></a>
             </div>
         </div>
         <!-- end of catagories -->

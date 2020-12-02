@@ -47,6 +47,9 @@ session_start();
                     }
                     ?>
                     <li><a href="checkout.php">Checkout</a></li>
+                    <li class = "cart">
+                      <a href = "cart.php">
+                        <ion-icon name ="basket"></ion-icon><span>0</span>
                 </ul>
             </nav>
         </div>
