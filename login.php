@@ -1,4 +1,14 @@
 <?php
+session_start();
+?>
+<html>
+  <head>
+    <title>Processing Login</title>
+  </head>
+  <body>
+    <h1>Processing</h1>
+    <?php
+
   $logged_in = false;
 
   if (isset($_POST["username"]) &&
@@ -28,9 +38,13 @@
           $sql = "SELECT * FROM accounts"; //Selecting all the accounts
           $results = mysqli_query($conn, $sql);
           $_SESSION['sess_user']=$username;
+          $_SESSION['sess_email']=$password;
           header("Location: home.php");
         } else {
-          echo "Username or password is incorrect";
+          $_SESSION['Error'] = "Fail to login";
+          header('location: account.php');
+          exit;
+          echo mysqli_error($conn);
           }
         } else {
           echo mysqli_error($conn);
@@ -41,4 +55,6 @@
           echo "Nothing was submitted.";
         }
             }
-?>
+            ?>
+</body>
+</html>
