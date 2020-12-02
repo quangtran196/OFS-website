@@ -1,4 +1,4 @@
-let carts = document.querySelectorAll('.add-cart');
+let cartsA = document.querySelectorAll('.add-cart');
 
 let products = [
 
@@ -6,41 +6,41 @@ let products = [
     name: 'Del Monte Whole Kernel Corn',
     tag: 'cannedcorn',
     price: 4.95,
-    weight:'15.25oz',
+    weight: 0.95,
     inCart: 0
   },
   {
     name: 'Green Giant White Shoepeg Corn',
     tag: 'cannedcorn2',
     price: 4.79,
-    weight: '15.25oz',
+    weight: 0.95,
     inCart: 0
   },
   {
     name: 'Hunts Diced Tomatoes',
     tag: 'cannedtomatos',
     price: 2.49,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   },
   {
     name: 'American Light Meat Tuna',
     tag: 'cannedtuna',
     price: 1.54,
-    weight: '6.5oz',
+    weight: 0.4,
     inCart: 0
   },
   {
     name: 'Libbys Corned Beef',
     tag: 'cornedbeef',
     price: 3.99,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   }
 ]
 
-  for (let i=0; i < carts.length; i++) {
-    carts[i].addEventListener('click',() => {
+  for (let i=0; i < cartsA.length; i++) {
+    cartsA[i].addEventListener('click',() => {
       cartNumbers(products[i]);
       totalCost(products[i])
     })

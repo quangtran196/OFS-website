@@ -6,35 +6,35 @@ let products = [
     name: 'Cheetos Crunchy Original',
     tag: 'cheetos',
     price: 1.95,
-    weight:'12oz',
+    weight: 0.75,
     inCart: 0
   },
   {
     name: 'Lays Classic',
     tag: 'lays',
     price: 2.29,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   },
   {
     name: 'Nacho Cheese Doritos',
     tag: 'doritos',
     price: 1.49,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   },
   {
     name: 'Takis Fuego',
     tag: 'takis',
     price: 2.54,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   },
   {
     name: 'Pringles Original',
     tag: 'pringles',
     price: 1.99,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   }
 ]

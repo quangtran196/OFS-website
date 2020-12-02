@@ -6,35 +6,35 @@ let products = [
     name: 'Fresh Organic Celery',
     tag: 'celery2',
     price: 1.95,
-    weight:'0.5IB',
+    weight:0.5,
     inCart: 0
   },
   {
     name: 'Fresh Organic Baby Bok Choy',
     tag: 'bokchoy2',
     price: 2.79,
-    weight: '1.0IB',
+    weight: 1.0,
     inCart: 0
   },
   {
     name: 'Fresh Organic Broccoli',
     tag: 'broccoli2',
     price: 4.49,
-    weight: '1.0IB',
+    weight: 1.0,
     inCart: 0
   },
   {
     name: 'Fresh Iceberg Lettuce',
     tag: 'iceberg2',
     price: 2.54,
-    weight: '1.0IB',
+    weight: 1.0,
     inCart: 0
   },
   {
     name: 'Fresh Organic Red Radish',
     tag: 'radish2',
     price: 5.99,
-    weight: '1.0IB',
+    weight: 1.0,
     inCart: 0
   }
 ]

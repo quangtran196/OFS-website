@@ -6,35 +6,35 @@ let products = [
     name: 'American Angus Ribeye Steak',
     tag: 'ribeye',
     price: 14.95,
-    weight: '12oz',
+    weight: 0.75,
     inCart: 0
   },
   {
     name: 'Kroger 100% Pure Ground Beef',
     tag: 'groundbeef',
     price: 8.79,
-    weight: '16oz',
+    weight: 1.0,
     inCart: 0
   },
   {
     name: 'Foster Farms Chicken Breast',
     tag: 'chickenb',
     price: 13.49,
-    weight: '10oz',
+    weight: 0.63,
     inCart: 0
   },
   {
     name: 'Yorkshire Valley Chicken Wings',
     tag: 'chickenwing',
     price: 14.54,
-    weight: '24oz',
+    weight: 1.5,
     inCart: 0
   },
   {
     name: 'Hormet Pork Chop Cut',
     tag: 'porkchop',
     price: 25.99,
-    weight: '40oz',
+    weight: 2.5,
     inCart: 0
   }
 ]
