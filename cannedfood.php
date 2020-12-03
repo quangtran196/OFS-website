@@ -126,7 +126,7 @@ session_start();
                       <img src = "images/imagesfe/cannedcorn.jpg" alt="fruit2">
                       <h3> Del Monte Whole Kernel Corn </h3>
                       <h3> 15.25oz </h3>
-                      <h3> $4.95 </h3>
+                      <h3> $4.90 </h3>
                       <a class="add-cart cart1" href="#"> Add to Cart</a>
                   </div>
 
@@ -134,7 +134,7 @@ session_start();
                       <img src = "images/imagesfe/cannedcorn2.jpg" alt="fruit2">
                       <h3> Green Giant White Shoepeg Corn </h3>
                       <h3> 15.25oz </h3>
-                      <h3> $4.79 </h3>
+                      <h3> $4.70 </h3>
                       <a class="add-cart cart2" href="#"> Add to Cart</a>
                   </div>
 
@@ -142,7 +142,7 @@ session_start();
                       <img src = "images/imagesfe/cannedtomatos.jpg" alt="fruit2">
                       <h3> Hunts Diced Tomatoes </h3>
                       <h3> 12oz </h3>
-                      <h3> $2.49 </h3>
+                      <h3> $2.40 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
 
@@ -150,7 +150,7 @@ session_start();
                       <img src = "images/imagesfe/cannedtuna.jpg" alt="fruit2">
                       <h3> American Light Meat Tuna </h3>
                       <h3> 6.5oz </h3>
-                      <h3> $1.54 </h3>
+                      <h3> $1.50 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>
 
@@ -158,7 +158,7 @@ session_start();
                       <img src = "images/imagesfe/cornedbeef.jpg" alt="fruit2">
                       <h3> Libby's Corned Beef </h3>
                       <h3> 12oz </h3>
-                      <h3> $3.99 </h3>
+                      <h3> $3.90 </h3>
                       <a class="add-cart cart5" href="#"> Add to Cart</a>
                   </div>
                 </div>

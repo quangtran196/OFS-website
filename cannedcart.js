@@ -5,35 +5,35 @@ let products = [
   {
     name: 'Del Monte Whole Kernel Corn',
     tag: 'cannedcorn',
-    price: 4.95,
+    price: 4.90,
     weight: 0.95,
     inCart: 0
   },
   {
     name: 'Green Giant White Shoepeg Corn',
     tag: 'cannedcorn2',
-    price: 4.79,
+    price: 4.70,
     weight: 0.95,
     inCart: 0
   },
   {
     name: 'Hunts Diced Tomatoes',
     tag: 'cannedtomatos',
-    price: 2.49,
+    price: 2.40,
     weight: 0.75,
     inCart: 0
   },
   {
     name: 'American Light Meat Tuna',
     tag: 'cannedtuna',
-    price: 1.54,
+    price: 1.50,
     weight: 0.4,
     inCart: 0
   },
   {
     name: 'Libbys Corned Beef',
     tag: 'cornedbeef',
-    price: 3.99,
+    price: 3.90,
     weight: 0.75,
     inCart: 0
   }
@@ -42,7 +42,8 @@ let products = [
   for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click',() => {
       cartNumbers(products[i]);
-      totalCost(products[i])
+      totalCost(products[i]);
+      totalWeight(products[i])
     })
   }
 
@@ -105,34 +106,56 @@ function totalCost(product) {
   }
 }
 
+function totalWeight(product) {
+
+  let cartWeight = localStorage.getItem('totalWeight');
+
+  if(cartWeight != null) {
+    cartWeight = parseInt(cartWeight);
+    localStorage.setItem("totalWeight", cartWeight + product.weight);
+  } else {
+  localStorage.setItem("totalWeight", product.weight);
+  }
+}
+
 function displayCart() {
 
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector(".products");
   let cartCost = localStorage.getItem('totalCost');
+  let cartWeight = localStorage.getItem('totalWeight');
 
   if(cartItems && productContainer) {
 
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
-        <div class = "product">
+      <div class = "product">
+        <div class ="product">
           <ion-icon name="close-circle"></ion-icon>
           <img src = "./images/imagesfe/${item.tag}.jpg">
           <span>${item.name}</span>
+        </div>
+
+        <div class="price">$${item.price}0</div>
+
+        <div class="weight">
+           <span>${item.weight}</span>
+        </div>
+
+        <div class="quantity">
+           <ion-icon class="decrease"
+           name="arrow-dropleft-circle"></ion-icon>
+           <span>${item.inCart}</span>
+           <ion-icon class="increase"
+           name="arrow-dropright-circle"></ion-icon>
        </div>
-       <div class="price">${item.price}</div>
-       <div class="weight">${item.weight}</div>
-       <div class="quantity">
-          <ion-icon class="decrease"
-          name="arrow-dropleft-circle"></ion-icon>
-          <span>${item.inCart}</span>
-          <ion-icon class="increase"
-          name="arrow-dropright-circle"></ion-icon>
-      </div>
-      <div class="total">
-        ${item.inCart * item.price}
+
+       <div class="total">
+         $${item.inCart * item.price}0
+       </div>
+
       </div>
       `;
     });
@@ -143,8 +166,21 @@ function displayCart() {
           Cart Total
         </h4>
         <h4 class="backetTotal">
-          $${cartCost}
+          $${cartCost}0
         </h4>
+      </div>
+    `;
+    productContainer.innerHTML += `
+      <div class="basketTotalContainer">
+        <h4 class="backetTotalTitle">
+        Total Weight -
+        </h4>
+        <h4 class="backetTotal">
+             ${cartWeight}lbs
+
+        </h4>
+      </div>
+
     `;
   }
 }
