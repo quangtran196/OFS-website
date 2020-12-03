@@ -76,7 +76,7 @@
             const addInfo = (ev) =>{
                 ev.preventDefault();
                 let info = {
-                    id: d1.getTime(),
+                    id: Date.now(),
                     date: m + "/" + d + "/" + y,
                     fname: document.getElementById('fname').value,
                     email:document.getElementById('email').value,
