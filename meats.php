@@ -123,7 +123,7 @@ session_start();
                   <div class = "image">
                       <img src = "images/imagesfe/ribeye.JPG" alt="fruit2">
                       <h3> American Angus Ribeye Steak </h3>
-                      <h3> 12.0oz </h3>
+                      <h3> 12oz </h3>
                       <h3> $14.95 </h3>
                       <a class="add-cart cart6" href="#"> Add to Cart</a>
                   </div>

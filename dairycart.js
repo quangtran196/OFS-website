@@ -6,35 +6,35 @@ let products = [
     name: 'Daily Pure low fat Milk',
     tag: 'milk',
     price: 3.35,
-    weight:'8.6Ibs',
+    weight: 8.6,
     inCart: 0
   },
   {
     name: 'Kraft American Cheese',
     tag: 'cheese',
     price: 5.39,
-    weight: '1.0lb',
+    weight: 1.0,
     inCart: 0
   },
   {
     name: 'Breyers Original Chocolate Ice Cream',
     tag: 'doritos',
     price: 4.49,
-    weight: '3.0lbs',
+    weight: 3.0,
     inCart: 0
   },
   {
     name: 'Yoplait Original Yogurt Strawberry',
     tag: 'yogurt',
     price: 2.14,
-    weight: '2.0 lb',
+    weight: 2.0,
     inCart: 0
   },
   {
     name: 'Land OLakes Salted Butter',
     tag: 'pringles',
     price: 5.99,
-    weight: '1.0lb',
+    weight: 1.0,
     inCart: 0
   }
 ]

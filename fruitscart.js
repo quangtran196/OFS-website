@@ -6,35 +6,35 @@ let products = [
     name: 'Fresh Navel Orange',
     tag: 'norange',
     price: 4.88,
-    weight:'3Ibs',
+    weight: 3.0,
     inCart: 0
   },
   {
     name: 'Fresh Gala Apples',
     tag: 'apple',
     price: 2.67,
-    weight: '3Ibs',
+    weight: 3.0,
     inCart: 0
   },
   {
     name: 'Produce Unbranded Hot House Strawberries',
     tag: 'sberry',
     price: 2.28,
-    weight: '1Ib',
+    weight: 1.0,
     inCart: 0
   },
   {
     name: 'Organic Red seedless Grapes',
     tag: 'redg',
     price: 4.99,
-    weight: '1.5Ibs',
+    weight: 1.5,
     inCart: 0
   },
   {
     name: 'Fresh Organic Kiwis',
     tag: 'ki',
     price: 3.98,
-    weight: '2Ibs',
+    weight: 2.0,
     inCart: 0
   }
 ]

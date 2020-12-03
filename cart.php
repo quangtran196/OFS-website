@@ -103,8 +103,8 @@ session_start();
                         <?php
                         if(isset($_SESSION["sess_user"])){
                             echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
-                            echo "<li><a href='profile.php'>Profile</a></h2></li>";
-                            echo "<li><a href='logout.php'>Logout</a></h2></li>";
+                            echo "<li><a href='profile.php'>Profile</a></li>";
+                            echo "<li><a href='logout.php'>Logout</a></li>";
                         } else
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
@@ -114,6 +114,8 @@ session_start();
                         <li class = "cart">
                           <a href = "cart.php">
                             <ion-icon name ="basket"></ion-icon><span>0</span>
+                          </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
