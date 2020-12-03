@@ -5,7 +5,7 @@ session_start();
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./css/profile.css">
+        <link rel="stylesheet" href="./css/deli.css">
         <title>Delivery and Payment Method</title>
     </head>
     <body>
@@ -55,27 +55,39 @@ session_start();
 
 
         <h2>Your Profile</h2>
-
+        <div class="msg">
+            <?php
+              if( isset($_SESSION['Error']) )
+                  {
+                    echo $_SESSION['Error'];
+                    unset($_SESSION['Error']);
+                  }
+              elseif (isset($_SESSION['success'])){
+                  echo $_SESSION['success'];
+                  unset($_SESSION['success']);
+                  }
+             ?>
         <div class="row">
             <div class="col">
                 <div class="container">
-                    <form class="" action="" method="post">
                         <div class="row">
                             <div class="col-50">
                                 <h3>Personal Information</h3>
-                                Full Name
-                                <input type="text" id="fname" name="name" value="<?php echo $_SESSION['sess_fullname']; ?>">
-                                Email
-                                <input type="text" id="email" name="email" value="<?php echo $_SESSION['sess_email1']; ?>">
-                                Address
-                                <input type="text" id="adr" name="address" value="<?php echo $_SESSION['sess_address']; ?>">
-                                City
-                                <input type="text" id="city" name="city" value="<?php echo $_SESSION['sess_city']; ?>">
-                                State
-                                <input type="text" id="state" name="state" value="<?php echo $_SESSION['sess_state']; ?>">
-                                Zip
-                                <input type="text" id="zip" name="zip" value="<?php echo $_SESSION['sess_zipcode']; ?>">
-                                <button type="update" class="btn">update</button>
+                                <form action="/profupdate.php" method="post">
+                                  Full Name
+                                  <input type="text" id="fname" name="fullname" value="<?php echo $_SESSION['sess_fullname']; ?>">
+                                  Email
+                                  <input type="text" id="email" name="email" value="<?php echo $_SESSION['sess_email']; ?>">
+                                  Address
+                                  <input type="text" id="adr" name="address" value="<?php echo $_SESSION['sess_address']; ?>">
+                                  City
+                                  <input type="text" id="city" name="city" value="<?php echo $_SESSION['sess_city']; ?>">
+                                  State
+                                  <input type="text" id="state" name="state" value="<?php echo $_SESSION['sess_state']; ?>">
+                                  Zip
+                                  <input type="text" id="zip" name="zip" value="<?php echo $_SESSION['sess_zip']; ?>">
+                                  <button type="submit" class="btn">Update</button>
+                              </form>
                             </div>
 
                             <div class="col-50">
@@ -85,8 +97,6 @@ session_start();
                                 </textarea>
                             </div>
                         </div>
-
-                    </form>
                 </div>
             </div>
 

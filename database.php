@@ -33,8 +33,8 @@ session_start();
               $_SESSION['sess_address']=$row["address"];
               $_SESSION['sess_city']=$row["city"];
               $_SESSION['sess_state']=$row["state"];
-              $_SESSION['sess_zipcode']=$row["zipcode"];
-              $_SESSION['sess_email1']=$row["email"];
+              $_SESSION['sess_zip']=$row["zip"];
+              $_SESSION['sess_email']=$row["email"];
               header("Location: profile.php");
               exit;
 

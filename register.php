@@ -11,8 +11,8 @@ session_start();
       if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["email"])) {
         if ($_POST["username"] && $_POST["password"] && $_POST["email"]) {
           $username = $_POST["username"];
-          $password = $_POST["password"];;
-          $email = $_POST["emailconfirm"];;
+          $password = $_POST["password"];
+          $email = $_POST["email"];
 
           // create connection
           $conn = mysqli_connect("localhost", "root", "", "users");
@@ -41,7 +41,10 @@ session_start();
           mysqli_close($conn); // close connection
 
         }   else {
-            alert("Username of password is empty.");
+          $_SESSION['Error'] = "All entries must be filled";
+          header('location: account.php');
+          exit;
+          echo mysqli_error($conn);
         }
       } else {
       alert("Form was not submitted.");

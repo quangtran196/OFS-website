@@ -38,7 +38,6 @@ session_start();
           $sql = "SELECT * FROM accounts"; //Selecting all the accounts
           $results = mysqli_query($conn, $sql);
           $_SESSION['sess_user']=$username;
-          $_SESSION['sess_email']=$password;
           header("Location: home.php");
         } else {
           $_SESSION['Error'] = "Fail to login";
