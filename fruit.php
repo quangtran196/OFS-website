@@ -85,7 +85,7 @@ session_start();
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
                         ?>
-                        <li><a href="checkout.php">Checkout</a></li>
+                         
 
                         <!-- Product CART function -->
 
@@ -142,7 +142,7 @@ session_start();
                   <div class = "image">
                       <img src = "images/imagesfe/sberry.jpg" alt="fruit2">
                       <h3> Produce Unbranded Hot House Strawberries </h3>
-                      <h3> 1.0lb </h3>
+                      <h3> 1.0 lbs </h3>
                       <h3> $2.20 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
@@ -150,7 +150,7 @@ session_start();
                   <div class = "image">
                       <img src = "images/imagesfe/redg.jpg" alt="fruit2">
                       <h3> Organic Red seedless Grapes </h3>
-                      <h3> 1.5 lb </h3>
+                      <h3> 1.5 lbs </h3>
                       <h3> $4.90 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>

@@ -85,7 +85,7 @@ session_start();
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
                         ?>
-                        <li><a href="checkout.php">Checkout</a></li>
+                         
 
                         <!-- Product CART function -->
 

@@ -85,7 +85,7 @@ session_start();
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
                         ?>
-                        <li><a href="checkout.php">Checkout</a></li>
+
 
                         <!-- Product CART function -->
 
@@ -140,7 +140,7 @@ session_start();
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/icecream.jpeg" alt="fruit2">
+                      <img src = "images/imagesfe/icecream.jpg" alt="fruit2">
                       <h3> Breyers Original Chocolate Ice Cream </h3>
                       <h3> 3.0 lbs </h3>
                       <h3> $4.40 </h3>
@@ -148,7 +148,7 @@ session_start();
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/yogurt.jpeg" alt="fruit2">
+                      <img src = "images/imagesfe/yogurt.jpg" alt="fruit2">
                       <h3> Yoplait Original Yogurt Strawberry </h3>
                       <h3> 2.0 lb </h3>
                       <h3> $2.10 </h3>
@@ -156,7 +156,7 @@ session_start();
                   </div>
 
                   <div class = "image">
-                      <img src = "images/imagesfe/butter.jpeg" alt="fruit2">
+                      <img src = "images/imagesfe/butter.jpg" alt="fruit2">
                       <h3> Land O'Lakes Salted Butter </h3>
                       <h3> 1.0lb </h3>
                       <h3> $5.90 </h3>

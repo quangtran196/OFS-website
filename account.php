@@ -46,7 +46,6 @@ session_start();
                     { echo '<li><a href="account.php">Account</a></li>';
                     }
                     ?>
-                    <li><a href="checkout.php">Checkout</a></li>
                     <li class = "cart">
                       <a href = "cart.php">
                         <ion-icon name ="basket"></ion-icon><span>0</span></a>
