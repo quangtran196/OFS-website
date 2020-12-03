@@ -27,8 +27,8 @@ session_start();
   cursor: pointer;
 }
 .products-container img {
-  width: 15%;
-  height: 10%;
+  width: 25%;
+  height: 25%;
 }
 .product-header {
   width: 100%;
@@ -39,25 +39,35 @@ session_start();
   margin: 0 auto;
 }
 .product-title {
-  width: 70%;
+  width: 40%;
 }
 .weight {
+  width: 15%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+div.weight {
+  margin-right: 100px;
+}
+.price {
+  width: 10%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+div.price {
+  margin-right: 100px;
+}
+.quantity {
   width: 20%;
   border-bottom: 1px solid lightgrey;
   display: flex;
   align-items: center;
 }
-.price {
-  width: 25%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center;
-}
-.quantity {
-  width: 30%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center;
+div.quantity {
+  margin-right: 100px;
 }
 .total {
   width: 10%;
@@ -65,8 +75,12 @@ session_start();
   display: flex;
   align-items: center;
 }
+div.total {
+  margin-right: 100px;
+}
 .product {
-  width: 45%;
+  width: 40%;
+  margin-right: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -129,19 +143,14 @@ session_start();
                 <h5 class = "quantity"> QUANTITY </h5>
                 <h5 class = "total"> TOTAL </h5>
             </div>
-            <div class = "products">
+            <div class = "products"></div>
 
-            </div>
         </div>
 
         <!-- end of menu bar -->
 
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <script src="cannedcart.js"></script>
-        <script src="cannedcart.js"></script>
-        <script src="fruitscart.js"></script>
-        <script src="meatscart.js"></script>
-        <script src="snackscart.js"></script>
+
         <script src="veggiecart.js"></script>
 
   </body>

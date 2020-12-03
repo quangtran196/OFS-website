@@ -284,6 +284,11 @@ session_start();
 
         <!-- end of General Information/ Footer-->
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="cannedcart.js"></script>
+        <script src="fruitscart.js"></script>
+        <script src="meatscart.js"></script>
+        <script src="snackscart.js"></script>
+        <script src="veggiecart.js"></script>
 
 
     </body>

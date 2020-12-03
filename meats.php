@@ -12,7 +12,8 @@ session_start();
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
       <link rel="stylesheet" href="./css/category-style.css">
         <style>
-.container1{
+.container1,
+.products-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -123,7 +124,7 @@ session_start();
                   <div class = "image">
                       <img src = "images/imagesfe/ribeye.JPG" alt="fruit2">
                       <h3> American Angus Ribeye Steak </h3>
-                      <h3> 12.0oz </h3>
+                      <h3> 12oz </h3>
                       <h3> $14.95 </h3>
                       <a class="add-cart cart6" href="#"> Add to Cart</a>
                   </div>
