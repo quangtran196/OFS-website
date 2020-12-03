@@ -110,11 +110,12 @@ session_start();
         <div class="features">
             <h1>Fresh Meat Products</h1>
             <ul>
-                <li><a href="fruit.php">Fruits</a></li>
-                <li><a href="veggies.php">Vegetables</a></li>
-                <li><a href="meats.php">Meats</a></li>
-                <li><a href="dairy.php">Dairy</a></li>
-                <li><a href="cannedfood.php">Canned Food</a></li>
+              <li><a href="fruit.php">Fruits</a></li>
+              <li><a href="veggies.php">Vegetables</a></li>
+              <li><a href="meats.php">Meats</a></li>
+              <li><a href="dairy.php">Dairy</a></li>
+              <li><a href="snacks.php">Snacks</a></li>
+              <li><a href="cannedfood.php">Canned Food</a></li>
             </ul>
             </div>
         <!-- end of feature products -->

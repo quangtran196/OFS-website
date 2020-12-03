@@ -84,7 +84,7 @@ session_start();
 
             <div class="row2">
                 <a href="dairy.php"><img src="images/homepage/dairy.png" class="fruit1"></a>
-                <a href="#"><img src="images/homepage/candy.png" class="fruit2"></a>
+                <a href="snacks.php"><img src="images/homepage/candy.png" class="fruit2"></a>
                 <a href="cannedfood.php"><img src="images/homepage/canned.png" class="fruit3"></a>
             </div>
         </div>
@@ -100,8 +100,8 @@ session_start();
             <div class="row-dairy">
                 <div class="col-1">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/grapes.png" ></a>
-                        <h4><a href="#">Organic Red seedless Grapes</a></h4>
+                        <a href="fruit.php"><img src="images/homepage/grapes.png" ></a>
+                        <h4><a href="">Organic Red seedless Grapes</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -110,13 +110,13 @@ session_start();
                             <i class="fa fa-star"></i>
                         </div>
                         <p>1.5 lbs</p>
-                        <p>$4.99</p>
+                        <p>$4.90</p>
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/milk.png" ></a>
-                        <h4><a href="#">Daily Pure Low Fat Milk - 1 gal</a></h4>
+                        <a href="dairy.php"><img src="images/homepage/milk.png" ></a>
+                        <h4><a href="">Daily Pure Low Fat Milk - 1 gal</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -125,13 +125,13 @@ session_start();
                             <i class="fa fa-star-o"></i>
                         </div>
                         <p>8.6 lbs</p>
-                        <p>$3.35</p>
+                        <p>$3.30</p>
                     </div>
 
                 </div>
                 <div class="col-3">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/broccoli.png"></a>
+                        <a href="veggies.php"><img src="images/homepage/broccoli.png"></a>
                         <h4><a href="#">Fresh Organic Broccoli - 1lb</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -141,12 +141,12 @@ session_start();
                             <i class="fa fa-star-o"></i>
                         </div>
                         <p>1lbs</p>
-                        <p>$4.99</p>
+                        <p>$4.90</p>
                     </div>
                 </div>
                 <div class="col-1">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/chicken-wings.png" ></a>
+                        <a href="meats.php"><img src="images/homepage/chicken-wings.png" ></a>
                         <h4><a href="#">Yorkshire Valley Chicken Wings - 24oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -156,7 +156,7 @@ session_start();
                             <i class="fa fa-star-o"></i>
                         </div>
                         <p>24oz</p>
-                        <p>$14.54</p>
+                        <p>$14.50</p>
                     </div>
                 </div>
 
