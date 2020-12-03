@@ -128,7 +128,7 @@ session_start();
                       <img src = "images/imagesfe/celery2.jpg" alt="fruit2">
                       <h3> Fresh Organic Celery </h3>
                       <h3> 0.5lb </h3>
-                      <h3> $1.95 </h3>
+                      <h3> $1.90 </h3>
                       <a class="add-cart cart1" href="#"> Add to Cart</a>
                   </div>
 
@@ -136,7 +136,7 @@ session_start();
                       <img src = "images/imagesfe/bokchoy2.jpg" alt="fruit2">
                       <h3> Fresh Organic Baby Bok Choy </h3>
                       <h3> 1.0lb </h3>
-                      <h3> $2.79 </h3>
+                      <h3> $2.70 </h3>
                       <a class="add-cart cart2" href="#"> Add to Cart</a>
                   </div>
 
@@ -144,7 +144,7 @@ session_start();
                       <img src = "images/imagesfe/broccoli2.jpg" alt="fruit2">
                       <h3> Fresh Organic Broccoli </h3>
                       <h3> 1.0lb </h3>
-                      <h3> $4.49 </h3>
+                      <h3> $4.40 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
 
@@ -152,7 +152,7 @@ session_start();
                       <img src = "images/imagesfe/iceberg2.jpg" alt="fruit2">
                       <h3> Fresh Iceberg Lettuce </h3>
                       <h3> 1.0lb </h3>
-                      <h3> $2.54 </h3>
+                      <h3> $2.50 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>
 
@@ -160,7 +160,7 @@ session_start();
                       <img src = "images/imagesfe/radish2.jpg" alt="fruit2">
                       <h3> Fresh Organic Red Radish </h3>
                       <h3> 1.0lb </h3>
-                      <h3> $5.99 </h3>
+                      <h3> $5.90 </h3>
                       <a class="add-cart cart5" href="#"> Add to Cart</a>
                   </div>
                 </div>

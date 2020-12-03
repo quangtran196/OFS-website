@@ -127,7 +127,7 @@ session_start();
                       <img src = "images/imagesfe/norange.jpg" alt="fruit2">
                       <h3> Fresh Navel Orange </h3>
                       <h3> 3.0 lbs </h3>
-                      <h3> $4.88 </h3>
+                      <h3> $4.80 </h3>
                       <a class="add-cart cart1" href="#"> Add to Cart</a>
                   </div>
 
@@ -135,7 +135,7 @@ session_start();
                       <img src = "images/imagesfe/apple.jpg" alt="fruit2">
                       <h3> Fresh Gala Apples </h3>
                       <h3> 3.0 lbs </h3>
-                      <h3> $2.67 </h3>
+                      <h3> $2.60 </h3>
                       <a class="add-cart cart2" href="#"> Add to Cart</a>
                   </div>
 
@@ -143,7 +143,7 @@ session_start();
                       <img src = "images/imagesfe/sberry.jpg" alt="fruit2">
                       <h3> Produce Unbranded Hot House Strawberries </h3>
                       <h3> 1.0lb </h3>
-                      <h3> $2.28 </h3>
+                      <h3> $2.20 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
 
@@ -151,7 +151,7 @@ session_start();
                       <img src = "images/imagesfe/redg.jpg" alt="fruit2">
                       <h3> Organic Red seedless Grapes </h3>
                       <h3> 1.5 lb </h3>
-                      <h3> $4.99 </h3>
+                      <h3> $4.90 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>
 
@@ -159,7 +159,7 @@ session_start();
                       <img src = "images/imagesfe/ki.jpg" alt="fruit2">
                       <h3> Fresh Organic Kiwis </h3>
                       <h3> 2.0 lbs </h3>
-                      <h3> $3.98 </h3>
+                      <h3> $3.90 </h3>
                       <a class="add-cart cart5" href="#"> Add to Cart</a>
                   </div>
                 </div>

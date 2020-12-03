@@ -5,35 +5,35 @@ let products = [
   {
     name: 'Fresh Organic Celery',
     tag: 'celery2',
-    price: 1.95,
+    price: 1.90,
     weight:0.5,
     inCart: 0
   },
   {
     name: 'Fresh Organic Baby Bok Choy',
     tag: 'bokchoy2',
-    price: 2.79,
+    price: 2.70,
     weight: 1.0,
     inCart: 0
   },
   {
     name: 'Fresh Organic Broccoli',
     tag: 'broccoli2',
-    price: 4.49,
+    price: 4.40,
     weight: 1.0,
     inCart: 0
   },
   {
     name: 'Fresh Iceberg Lettuce',
     tag: 'iceberg2',
-    price: 2.54,
+    price: 2.50,
     weight: 1.0,
     inCart: 0
   },
   {
     name: 'Fresh Organic Red Radish',
     tag: 'radish2',
-    price: 5.99,
+    price: 5.90,
     weight: 1.0,
     inCart: 0
   }
@@ -42,7 +42,8 @@ let products = [
   for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click',() => {
       cartNumbers(products[i]);
-      totalCost(products[i])
+      totalCost(products[i]);
+      totalWeight(products[i])
     })
   }
 
@@ -105,12 +106,25 @@ function totalCost(product) {
   }
 }
 
+function totalWeight(product) {
+
+  let cartWeight = localStorage.getItem('totalWeight');
+
+  if(cartWeight != null) {
+    cartWeight = parseInt(cartWeight);
+    localStorage.setItem("totalWeight", cartWeight + product.weight);
+  } else {
+  localStorage.setItem("totalWeight", product.weight);
+  }
+}
+
 function displayCart() {
 
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector(".products");
   let cartCost = localStorage.getItem('totalCost');
+  let cartWeight = localStorage.getItem('totalWeight');
 
   if(cartItems && productContainer) {
 
@@ -124,7 +138,7 @@ function displayCart() {
             <span>${item.name}</span>
           </div>
 
-          <div class="price">${item.price}</div>
+          <div class="price">$${item.price}0</div>
 
           <div class="weight">
              <span>${item.weight}</span>
@@ -139,7 +153,7 @@ function displayCart() {
          </div>
 
          <div class="total">
-           ${item.inCart * item.price}
+           $${item.inCart * item.price}0
          </div>
 
         </div>
@@ -150,11 +164,27 @@ function displayCart() {
     productContainer.innerHTML += `
       <div class="basketTotalContainer">
         <h4 class="backetTotalTitle">
-          Cart Total
+        Cart Total ---
         </h4>
         <h4 class="backetTotal">
-          $${cartCost}
+             $${cartCost}0
         </h4>
+      </div>
+
+
+    `;
+    productContainer.innerHTML += `
+      <div class="basketTotalContainer">
+        <h4 class="backetTotalTitle">
+        Total Weight -
+        </h4>
+        <h4 class="backetTotal">
+             ${cartWeight}lbs
+
+        </h4>
+      </div>
+
+
     `;
   }
 }

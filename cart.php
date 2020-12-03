@@ -12,12 +12,16 @@ session_start();
       <link rel="stylesheet" href="./css/homepage-style.css">
 
 <style>
+.body{
+  width: 100%;
+}
 
 .products-container {
-  max-width: 1150px;
+  max-width: 83%;
   justify-content: space-around;
-  margin: 0 auto;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .products-container ion-icon {
   font-size: 25px;
@@ -27,65 +31,102 @@ session_start();
   cursor: pointer;
 }
 .products-container img {
-  width: 25%;
-  height: 25%;
+  width: 50%;
+  height: 50%;
 }
 .product-header {
   width: 100%;
-  max-width: 1150px;
+
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px solid lightgrey;
-  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-title {
-  width: 40%;
+  width: 17%;
 }
-.weight {
+h5.weight {
   width: 15%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
   display: flex;
-  align-items: center;
+  padding-left: 5%;
 }
 div.weight {
-  margin-right: 100px;
+  padding-left: 20%;
+  margin-left: 15%;
 }
-.price {
-  width: 10%;
-  border-bottom: 1px solid lightgrey;
+h5.price {
+
+  width: 11.5%;
+  border-bottom: 3px solid lightgrey;
   display: flex;
   align-items: center;
   text-align: center;
 }
 div.price {
-  margin-right: 100px;
+  padding-left:6%;
+  margin-left: 23%;
 }
 .quantity {
   width: 20%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
   display: flex;
   align-items: center;
+  padding-left: 5%;
 }
 div.quantity {
-  margin-right: 100px;
+  margin-left: 27%;
 }
-.total {
+h5.total {
   width: 10%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
   display: flex;
   align-items: center;
+
 }
 div.total {
-  margin-right: 100px;
+  display: flex;
+  padding-left: 15%;
+  margin-left: 10%;
 }
 .product {
   width: 40%;
-  margin-right: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid lightgrey;
+  margin-left: 10%;
+}
+.product-title {
+  width: 16%;
+  border-bottom: 3px solid lightgrey;
+}
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  padding: 10px 0;
+}
+h4.backetTotalTitle {
+  width: 12%;
+}
+h4.WeightTotalTitle {
+  width: 13%;
+  margin-left: 20px;
+}
+button{
+  background: #1c00b5;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+  cursor: pointer;
+  margin-left: 62%;
 }
 
 </style>
@@ -144,14 +185,28 @@ div.total {
                 <h5 class = "total"> TOTAL </h5>
             </div>
             <div class = "products"></div>
+            <div class ="price"></div>
+
+                <form action="home.php">
+                    <button type="submit">Continue Shopping</button>
+                </form>
+
+                <form action="deli-payment.php">
+                    <button type="submit">Continue to Checkout</button>
+                </form>
 
         </div>
 
         <!-- end of menu bar -->
 
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
         <script src="veggiecart.js"></script>
+        <script src="meatscart.js"></script>
+        <script src="fruitcart.js"></script>
+        <script src="snackscart.js"></script>
+        <script src="dairycart.js"></script>
+        <script src="cannedcart.js"></script>
+
 
   </body>
 </html>

@@ -123,7 +123,7 @@ session_start();
                       <img src = "images/imagesfe/cheetos.jpg" alt="fruit2">
                       <h3> Cheetos Crunchy Original </h3>
                       <h3> 12oz </h3>
-                      <h3> $1.95 </h3>
+                      <h3> $1.90 </h3>
                       <a class="add-cart cart1" href="#"> Add to Cart</a>
                   </div>
 
@@ -131,7 +131,7 @@ session_start();
                       <img src = "images/imagesfe/lays.jpg" alt="fruit2">
                       <h3> Lays Classic </h3>
                       <h3> 12oz </h3>
-                      <h3> $2.29 </h3>
+                      <h3> $2.20 </h3>
                       <a class="add-cart cart2" href="#"> Add to Cart</a>
                   </div>
 
@@ -139,7 +139,7 @@ session_start();
                       <img src = "images/imagesfe/doritos.jpg" alt="fruit2">
                       <h3> Nacho Cheese Doritos </h3>
                       <h3> 12oz </h3>
-                      <h3> $1.49 </h3>
+                      <h3> $1.40 </h3>
                       <a class="add-cart cart3" href="#"> Add to Cart</a>
                   </div>
 
@@ -147,7 +147,7 @@ session_start();
                       <img src = "images/imagesfe/takis.jpg" alt="fruit2">
                       <h3> Takis Fuego </h3>
                       <h3> 12oz </h3>
-                      <h3> $2.54 </h3>
+                      <h3> $2.50 </h3>
                       <a class="add-cart cart4" href="#"> Add to Cart</a>
                   </div>
 
@@ -155,7 +155,7 @@ session_start();
                       <img src = "images/imagesfe/pringles.jpg" alt="fruit2">
                       <h3> Pringles Original </h3>
                       <h3> 10oz </h3>
-                      <h3> $1.99 </h3>
+                      <h3> $1.90 </h3>
                       <a class="add-cart cart5" href="#"> Add to Cart</a>
                   </div>
                 </div>

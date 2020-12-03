@@ -125,7 +125,7 @@ session_start();
                       <img src = "images/imagesfe/ribeye.JPG" alt="fruit2">
                       <h3> American Angus Ribeye Steak </h3>
                       <h3> 12oz </h3>
-                      <h3> $14.95 </h3>
+                      <h3> $14.90 </h3>
                       <a class="add-cart cart6" href="#"> Add to Cart</a>
                   </div>
 
@@ -133,7 +133,7 @@ session_start();
                       <img src = "images/imagesfe/groundbeef.JPG" alt="fruit2">
                       <h3> Kroger 100% Pure Ground Beef  </h3>
                       <h3> 16.0oz </h3>
-                      <h3> $8.79 </h3>
+                      <h3> $8.70 </h3>
                       <a class="add-cart cart7" href="#"> Add to Cart</a>
                   </div>
 
@@ -141,7 +141,7 @@ session_start();
                       <img src = "images/imagesfe/chickenb.JPG" alt="fruit2">
                       <h3> Foster Farms Chicken Breast </h3>
                       <h3> 10.0oz </h3>
-                      <h3> $13.49 </h3>
+                      <h3> $13.40 </h3>
                       <a class="add-cart cart8" href="#"> Add to Cart</a>
                   </div>
 
@@ -149,7 +149,7 @@ session_start();
                       <img src = "images/imagesfe/chickenwing.JPG" alt="fruit2">
                       <h3> Yorkshire Valley Chicken Wings </h3>
                       <h3> 24.0oz </h3>
-                      <h3> $14.54 </h3>
+                      <h3> $14.50 </h3>
                       <a class="add-cart cart9" href="#"> Add to Cart</a>
                   </div>
 
@@ -157,7 +157,7 @@ session_start();
                       <img src = "images/imagesfe/porkchop.JPG" alt="fruit2">
                       <h3> Hormet Pork Chop Cut </h3>
                       <h3> 40.0oz </h3>
-                      <h3> $25.99 </h3>
+                      <h3> $25.90 </h3>
                       <a class="add-cart cart10" href="#"> Add to Cart</a>
                   </div>
                 </div>
