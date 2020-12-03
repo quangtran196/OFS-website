@@ -38,7 +38,7 @@ session_start();
                         <?php
                         if(isset($_SESSION["sess_email"])){
                             echo "Hello, "; echo $_SESSION['sess_email']; echo "!";
-                            echo "<li><a href='profile.php'>Profile</a></h2></li>";
+                            echo "<li><a href='database.php'>Profile</a></h2></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
                         } else
                         { echo '<li><a href="account.php">Account</a></li>';

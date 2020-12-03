@@ -5,7 +5,7 @@ session_start();
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./css/deli.css">
+        <link rel="stylesheet" href="./css/profile.css">
         <title>Delivery and Payment Method</title>
     </head>
     <body>
@@ -34,7 +34,7 @@ session_start();
                             <li><a href="contact.php">Contact Us</a></li>
                             <?php
                             if(isset($_SESSION["sess_user"])){
-                                echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
+                                echo "Hello, "; echo $_SESSION['sess_user1']; echo "!";
                                 echo "<li><a href='profile.php'>Profile</a></h2></li>";
                                 echo "<li><a href='logout.php'>Logout</a></h2></li>";
                             } else
@@ -45,11 +45,15 @@ session_start();
                             <li class = "cart">
                               <a href = "cart.php">
                                 <ion-icon name ="basket"></ion-icon><span>0</span>
+                              </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         <!-- end of menu bar -->
+
+
         <h2>Your Profile</h2>
 
         <div class="row">
@@ -59,25 +63,19 @@ session_start();
                         <div class="row">
                             <div class="col-50">
                                 <h3>Personal Information</h3>
-                                <label for="name"><i class"fa fa-user">Full Name</i></label>
-                                <input type="text" id="fname" name="name" placeholder="Michael Jackson">
-                                <label for="email"><i class"fa fa-envelope"> Email</i></label>
-                                <input type="text" id="email" name="email" placeholder="john@example.com">
-                                <label for="adr"><i class"fa fa-address-caed-o">Address</i></label>
-                                <input type="text" id="adr" name="address" placeholder="123 Market Street">
-                                <label for="city"><i class"fa fa-institution">City</i></label>
-                                <input type="text" id="city" name="city" placeholder="San Jose">
-
-                                <div class="row">
-                                    <div class="col-50">
-                                        <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="San Jose">
-                                    </div>
-                                    <div class="col-50">
-                                        <label for="state">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="10000">
-                                    </div>
-                                </div>
+                                Full Name
+                                <input type="text" id="fname" name="name" value="<?php echo $_SESSION['sess_fullname']; ?>">
+                                Email
+                                <input type="text" id="email" name="email" value="<?php echo $_SESSION['sess_email1']; ?>">
+                                Address
+                                <input type="text" id="adr" name="address" value="<?php echo $_SESSION['sess_address']; ?>">
+                                City
+                                <input type="text" id="city" name="city" value="<?php echo $_SESSION['sess_city']; ?>">
+                                State
+                                <input type="text" id="state" name="state" value="<?php echo $_SESSION['sess_state']; ?>">
+                                Zip
+                                <input type="text" id="zip" name="zip" value="<?php echo $_SESSION['sess_zipcode']; ?>">
+                                <button type="update" class="btn">update</button>
                             </div>
 
                             <div class="col-50">
@@ -85,6 +83,9 @@ session_start();
                                 <textarea id="w3review" name="w3review" rows="30" cols="70">
                                 Hello
                                 </textarea>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
