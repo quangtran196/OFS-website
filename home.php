@@ -37,7 +37,7 @@ session_start();
                         <li><a href="contact.php">Contact Us</a></li>
                         <?php
                         if(isset($_SESSION["sess_email"])){
-                            echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
+                            echo "Hello, "; echo $_SESSION['sess_email']; echo "!";
                             echo "<li><a href='database.php'>Profile</a></h2></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
                         } else
@@ -213,24 +213,24 @@ session_start();
                 <div class="tes-row">
                     <div class="tes-col">
                         <i class="fa fa-quote-left"></i>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <img src="images/homepage/duc-tran.jpg" alt="">
-                        <h2>Duc Tran</h2>
+                        <p>We are busy people having no time to shop.</p>
+                        <p>Grocery Raja solves our problem by delivering products at door step WHENEVER we want. Thank you, OFS.</p>
+                        <img src="images/homepage/p1.jpg" alt="">
+                        <h2>Cardi B</h2>
                     </div>
                     <div class="tes-col">
                         <i class="fa fa-quote-left"></i>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <img src="images/homepage/duc-tran.jpg" alt="">
-                        <h2>Duc Tran</h2>
+                        <p>Decent prices, a good amount of products to choose from, efficient and friendly staff from customer service.</p>
+                        <p>I love their service.</p>
+                        <img src="images/homepage/p2.jpg" alt="">
+                        <h2>Fauci Anthony</h2>
                     </div>
                     <div class="tes-col">
                         <i class="fa fa-quote-left"></i>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <img src="images/homepage/duc-tran.jpg" alt="">
-                        <h2>Duc Tran</h2>
+                        <p>Now you don't need a long wait to get your groceries every week.</p>
+                        <p> You can order just in few mins and get it delivered the same day.</p>
+                        <img src="images/homepage/p3.jpg" alt="">
+                        <h2>Selena Gomez</h2>
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@ session_start();
             <div class="footer-col">
                 <div class="text">
                     <h1>O F S</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    <p>Every day you get our best.</p>
                 </div>
 
             </div>
