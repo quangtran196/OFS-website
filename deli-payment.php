@@ -68,10 +68,16 @@
         </div>
         <script>
             let deliInfo = [];
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
 
             const addInfo = (ev) =>{
                 ev.preventDefault();
                 let info = {
+                    id: d1.getTime(),
+                    date: m + "/" + d + "/" + y,
                     fname: document.getElementById('fname').value,
                     email:document.getElementById('email').value,
                     adr:document.getElementById('adr').value,
