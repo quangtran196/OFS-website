@@ -27,11 +27,11 @@
                                 <div class="row">
                                     <div class="col-50">
                                         <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="San Jose">
+                                        <input type="text" id="state" name="state" placeholder="CA">
                                     </div>
                                     <div class="col-50">
                                         <label for="state">Zip</label>
-                                        <input type="text" id="zip" name="zip" placeholder="10000">
+                                        <input type="text" id="zip" name="zip" placeholder="10000" minlength="5" maxlength="5">
                                     </div>
                                 </div>
                             </div>
@@ -41,13 +41,15 @@
                                 <label for="cname">Name on Card</label>
                                 <input type="text" id="card-name" name="cnumber" placeholder="Michael Jackson">
                                 <label for="ccnum">Credit Card</label>
-                                <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1231-1234-1234">
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="0000111122223333" minlength="16"
+                                maxlength="16">
                                 <label for="card-name">Expire Month</label>
-                                <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+                                <input type="text" id="expmonth" name="expmonth" placeholder="00"
+                                minlength="2" maxlength="2">
                                 <div class="row">
                                     <div class="col-50">
                                         <label for="expyear">Expire Year</label>
-                                        <input type="text" id="expyear" name="expyear" placeholder="2022">
+                                        <input type="text" id="expyear" name="expyear" placeholder="2022" minlength="4" maxlength="4">
                                     </div>
                                     <div class="col-50">
                                         <label for="state">CVV</label>
@@ -57,11 +59,40 @@
                             </div>
                         </div>
                         <label><input type="checkbox" name="sameadr" checked="checked">Shipping Address same as billing</label>
-                        <input type="submit" name="" value="Continue To checkbox" class="btn">
+                        <button id="btn" style=" width: 200px; height: 50px; margin-left:50px">Pay Now</button>
                     </form>
+
                 </div>
             </div>
 
         </div>
+        <script>
+            let deliInfo = [];
+
+            const addInfo = (ev) =>{
+                ev.preventDefault();
+                let info = {
+                    fname: document.getElementById('fname').value,
+                    email:document.getElementById('email').value,
+                    adr:document.getElementById('adr').value,
+                    city:document.getElementById('city').value,
+                    state:document.getElementById('state').value,
+                    zip:document.getElementById('zip').value,
+                    cardName:document.getElementById('card-name').value,
+                    cardNum:document.getElementById('ccnum').value,
+                    expmonth:document.getElementById('expmonth').value,
+                    expYear:document.getElementById('expyear').value,
+                    cvv:document.getElementById('cvv').value
+                }
+                deliInfo.push(info);
+                document.forms[0].reset();
+
+
+                localStorage.setItem('DeliveryInfo',JSON.stringify(deliInfo));
+            }
+            document.addEventListener('DOMContentLoaded', ()=>{
+                document.getElementById('btn').addEventListener('click', addInfo);
+            });
+        </script>
     </body>
 </html>
