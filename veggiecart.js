@@ -156,6 +156,7 @@ function displayCart() {
           $${cartCost}
         </h4>
     `;
+
   }
 }
 

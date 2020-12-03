@@ -8,15 +8,11 @@ session_start();
   <body>
     <h1>Processing</h1>
     <?php
-      if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["passconfirm"])
-      && isset($_POST["email"]) && isset($_POST["emailconfirm"])) {
-        if ($_POST["username"] && $_POST["password"] && $_POST["passconfirm"]
-        && $_POST["email"] && $_POST["emailconfirm"]) {
+      if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["email"])) {
+        if ($_POST["username"] && $_POST["password"] && $_POST["email"]) {
           $username = $_POST["username"];
-          $password = $_POST["password"];
-          $passconfirm = $_POST["passconfirm"];
-          $email = $_POST["emailconfirm"];
-          $emailconfirm = $_POST["emailconfirm"];
+          $password = $_POST["password"];;
+          $email = $_POST["emailconfirm"];;
 
           // create connection
           $conn = mysqli_connect("localhost", "root", "", "users");
@@ -27,8 +23,8 @@ session_start();
           }
 
           // register user
-          $sql = "INSERT INTO accounts (username, password, passconfirm, email, emailconfirm) VALUES
-          ('$username', '$password', '$passconfirm', '$email', '$emailconfirm')";
+          $sql = "INSERT INTO accounts (username, password, email) VALUES
+          ('$username', '$password', '$email')";
           $results = mysqli_query($conn, $sql);
 
           if ($results) {
