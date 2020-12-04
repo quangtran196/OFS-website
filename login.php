@@ -51,7 +51,10 @@ session_start();
 
         mysqli_close($conn); // close connection
         } else {
-          echo "Nothing was submitted.";
+          $_SESSION['Error'] = "All entries must be filled";
+          header('location: account.php');
+          exit;
+          echo mysqli_error($conn);
         }
     }
 ?>

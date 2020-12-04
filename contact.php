@@ -9,6 +9,7 @@ session_start();
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <link rel="stylesheet" href="./css/contact-style1.css">
     </head>
 
@@ -90,7 +91,7 @@ session_start();
                     <label> Message </label>
                     <textarea row="5" placeholder="Insert Message Here"></textarea>
 
-                    <button type="submit">SEND</button>
+                    <button onclick="popUp()" type="submit">SEND</button>
 
                   </form>
 
@@ -118,7 +119,24 @@ session_start();
                 </div>
               </div>
       </div>
-
+      <script>
+      function popUp(){
+          swal({ title: "Thank you!",
+           text: "We will send you the confirmation email in a few seconds.",
+           type: "success",
+           button: "Back to Home Page",}).then(okay => {
+             if (okay) {
+              window.location.href = "home.php";
+            }
+          });
+      }
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="cannedcart.js"></script>
+    <script src="fruitscart.js"></script>
+    <script src="meatscart.js"></script>
+    <script src="snackscart.js"></script>
+    <script src="veggiecart.js"></script>
 
 
       </body>

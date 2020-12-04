@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/deli.css">
         <title>Delivery and Payment Method</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <h2>Delivery Form</h2>
@@ -59,7 +60,7 @@
                             </div>
                         </div>
                         <label><input type="checkbox" name="sameadr" checked="checked">Shipping Address same as billing</label>
-                        <button id="btn" style=" width: 200px; height: 50px; margin-left:50px">Pay Now</button>
+                        <button id="btn" onclick="popUp()" style=" width: 200px; height: 50px; margin-left:50px">Pay Now</button>
                     </form>
 
                 </div>
@@ -99,6 +100,17 @@
             document.addEventListener('DOMContentLoaded', ()=>{
                 document.getElementById('btn').addEventListener('click', addInfo);
             });
+            function popUp(){
+                swal({ title: "Thank you!",
+                 text: "We will send you the confirmation email in a few seconds.",
+                 type: "success",
+                 button: "Back to Home Page",}).then(okay => {
+                   if (okay) {
+                    window.location.href = "home.php";
+                  }
+                });
+            }
+            localStorage.clear();
         </script>
     </body>
 </html>

@@ -6,12 +6,12 @@ session_start();
   <head>
     <meta charset="utf-8">
         <title>Registration/Login Page</title>
-    <!-- <meta name="viewport" content="width=device-width,
-    initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
       <link rel="stylesheet" href="./css/accountstyle.css">
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 <!-- menu bar-->
@@ -106,6 +106,14 @@ session_start();
 </div>
 
 <!---js for toggle form -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="veggiecart.js"></script>
+  <script src="meatscart.js"></script>
+  <script src="fruitcart.js"></script>
+  <script src="snackscart.js"></script>
+  <script src="dairycart.js"></script>
+  <script src="cannedcart.js"></script>
+
   <script>
 
   var LoginForm = document.getElementById("LoginForm");
@@ -122,6 +130,7 @@ session_start();
       LoginForm.style.transform = "translateX(300px)";
       Indicator.style.transform = "translateX(0px)";
     }
+
 
   </script>
 
