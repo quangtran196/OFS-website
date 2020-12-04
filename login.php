@@ -22,7 +22,7 @@ session_start();
 
       // check connection
       if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
+          die("Connection failed: " . mysqli_connect_error());
       }
 
       // select user
@@ -31,20 +31,20 @@ session_start();
       $results = mysqli_query($conn, $sql);
 
       if ($results) {
-        $row = mysqli_fetch_assoc($results);
-        if ($row["password"] === $password) { //Checks if the password matches
-          session_start();
-          $logged_in = true; //Logging in
-          $sql = "SELECT * FROM accounts"; //Selecting all the accounts
-          $results = mysqli_query($conn, $sql);
-          $_SESSION['sess_user']=$username;
-          header("Location: home.php");
-        } else {
-          $_SESSION['Error'] = "Fail to login";
-          header('location: account.php');
-          exit;
-          echo mysqli_error($conn);
-          }
+            $row = mysqli_fetch_assoc($results);
+            if ($row["password"] === $password) { //Checks if the password matches
+                  session_start();
+                  $logged_in = true; //Logging in
+                  $sql = "SELECT * FROM accounts"; //Selecting all the accounts
+                  $results = mysqli_query($conn, $sql);
+                  $_SESSION['sess_user']=$username;
+                  header("Location: home.php");
+            } else {
+                  $_SESSION['Error'] = "Fail to login";
+                  header('location: account.php');
+                  exit;
+                  echo mysqli_error($conn);
+            }
         } else {
           echo mysqli_error($conn);
         }
@@ -53,7 +53,7 @@ session_start();
         } else {
           echo "Nothing was submitted.";
         }
-            }
-            ?>
+    }
+?>
 </body>
 </html>

@@ -79,18 +79,18 @@ session_start();
                         <?php
                         if(isset($_SESSION["sess_user"])){
                             echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
-                            echo "<li><a href='database.php'>Profile</a></li>";
+                            echo "<li><a href='database.php'>Profile</a></h2></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
                         } else
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
                         ?>
-
                         <!-- Product CART function -->
-
                         <li class = "cart">
-                          <a href = "cart.php">
-                            <ion-icon name ="basket"></ion-icon><span>0</span>
+                            <a href = "cart.php">
+                                <ion-icon name ="basket"></ion-icon><span>0</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -109,13 +109,14 @@ session_start();
         <!-- feature products -->
         <div class="features">
             <h1>Canned Foods</h1>
-            <ul>
-              <li><a href="fruit.php">Fruits</a></li>
-              <li><a href="veggies.php">Vegetables</a></li>
-              <li><a href="meats.php">Meats</a></li>
-              <li><a href="dairy.php">Dairy</a></li>
-              <li><a href="cannedfood.php">Canned Food</a></li>
-            </ul>
+                <ul>
+                    <li><a href="fruit.php">Fruits</a></li>
+                    <li><a href="veggies.php">Vegetables</a></li>
+                    <li><a href="meats.php">Meats</a></li>
+                    <li><a href="dairy.php">Dairy</a></li>
+                    <li><a href="snacks.php">Snacks</a></li>
+                    <li><a href="cannedfood.php">Canned Food</a></li>
+                </ul>
             </div>
         <!-- end of feature products -->
 

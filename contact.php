@@ -29,6 +29,7 @@ session_start();
                                   <li><a href="veggies.php">Vegetables</a></li>
                                   <li><a href="meats.php">Meats</a></li>
                                   <li><a href="dairy.php">Dairy</a></li>
+                                  <li><a href="snacks.php">Snacks</a></li>
                                   <li><a href="cannedfood.php">Canned Food</a></li>
                               </ul>
                           </div>
@@ -43,10 +44,12 @@ session_start();
                       { echo '<li><a href="account.php">Account</a></li>';
                       }
                       ?>
-                      <li><a href="checkout.php">Checkout</a></li>
+                      <!-- Product CART function -->
                       <li class = "cart">
-                        <a href = "cart.php">
-                          <ion-icon name ="basket"></ion-icon><span>0</span>
+                          <a href = "cart.php">
+                              <ion-icon name ="basket"></ion-icon><span>0</span>
+                          </a>
+                      </li>
                   </ul>
               </nav>
           </div>

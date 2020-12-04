@@ -95,7 +95,6 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 10px;
   width: 100%;
 }
 

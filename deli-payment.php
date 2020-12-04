@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="col-50">
                                         <label for="state">CVV</label>
-                                        <input type="text" id="cvv" name="cvv" placeholder="543">
+                                        <input type="text" id="cvv" name="cvv" placeholder="543" minlength="3" maxlength="3">
                                     </div>
                                 </div>
                             </div>

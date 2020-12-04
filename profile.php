@@ -27,6 +27,7 @@ session_start();
                                         <li><a href="veggies.php">Vegetables</a></li>
                                         <li><a href="meats.php">Meats</a></li>
                                         <li><a href="dairy.php">Dairy</a></li>
+                                        <li><a href="snacks.php">Snacks</a></li>
                                         <li><a href="cannedfood.php">Canned Food</a></li>
                                     </ul>
                                 </div>
@@ -34,18 +35,18 @@ session_start();
                             <li><a href="contact.php">Contact Us</a></li>
                             <?php
                             if(isset($_SESSION["sess_user"])){
-                                echo "Hello, "; echo $_SESSION['sess_user1']; echo "!";
-                                echo "<li><a href='profile.php'>Profile</a></h2></li>";
+                                echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
+                                echo "<li><a href='database.php'>Profile</a></h2></li>";
                                 echo "<li><a href='logout.php'>Logout</a></h2></li>";
                             } else
                             { echo '<li><a href="account.php">Account</a></li>';
                             }
                             ?>
-                             
+                            <!-- Product CART function -->
                             <li class = "cart">
-                              <a href = "cart.php">
-                                <ion-icon name ="basket"></ion-icon><span>0</span>
-                              </a>
+                                <a href = "cart.php">
+                                    <ion-icon name ="basket"></ion-icon><span>0</span>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -90,12 +91,7 @@ session_start();
                               </form>
                             </div>
 
-                            <div class="col-50">
-                                <h3>Your Order History</h3>
-                                <textarea id="w3review" name="w3review" rows="30" cols="70">
-                                Hello
-                                </textarea>
-                            </div>
+                        
                         </div>
                 </div>
             </div>

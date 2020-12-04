@@ -36,21 +36,20 @@ session_start();
                         </li>
                         <li><a href="contact.php">Contact Us</a></li>
                         <?php
-                        if(isset($_SESSION["sess_email"])){
-                            echo "Hello, "; echo $_SESSION['sess_email']; echo "!";
+                        if(isset($_SESSION["sess_user"])){
+                            echo "Hello, "; echo $_SESSION['sess_user']; echo "!";
                             echo "<li><a href='database.php'>Profile</a></h2></li>";
                             echo "<li><a href='logout.php'>Logout</a></h2></li>";
                         } else
                         { echo '<li><a href="account.php">Account</a></li>';
                         }
                         ?>
-                         
-
                         <!-- Product CART function -->
-
                         <li class = "cart">
-                          <a href = "cart.php">
-                            <ion-icon name ="basket"></ion-icon><span>0</span>
+                            <a href = "cart.php">
+                                <ion-icon name ="basket"></ion-icon><span>0</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -84,7 +83,7 @@ session_start();
 
             <div class="row2">
                 <a href="dairy.php"><img src="images/homepage/dairy.png" class="fruit1"></a>
-                <a href="#"><img src="images/homepage/candy.png" class="fruit2"></a>
+                <a href="snacks.php"><img src="images/homepage/candy.png" class="fruit2"></a>
                 <a href="cannedfood.php"><img src="images/homepage/canned.png" class="fruit3"></a>
             </div>
         </div>
@@ -100,7 +99,7 @@ session_start();
             <div class="row-dairy">
                 <div class="col-1">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/grapes.png" ></a>
+                        <a href="fruit.php"><img src="images/homepage/grapes.png" ></a>
                         <h4><a href="#">Organic Red seedless Grapes</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -115,7 +114,7 @@ session_start();
                 </div>
                 <div class="col-2">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/milk.png" ></a>
+                        <a href="dairy.php"><img src="images/homepage/milk.png" ></a>
                         <h4><a href="#">Daily Pure Low Fat Milk - 1 gal</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -131,7 +130,7 @@ session_start();
                 </div>
                 <div class="col-3">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/broccoli.png"></a>
+                        <a href="veggies.php"><img src="images/homepage/broccoli.png"></a>
                         <h4><a href="#">Fresh Organic Broccoli - 1lb</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -146,7 +145,7 @@ session_start();
                 </div>
                 <div class="col-1">
                     <div class="item-img">
-                        <a href=""><img src="images/homepage/chicken-wings.png" ></a>
+                        <a href="meats.php"><img src="images/homepage/chicken-wings.png" ></a>
                         <h4><a href="#">Yorkshire Valley Chicken Wings - 24oz</a></h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -175,7 +174,7 @@ session_start();
                         <h1>100% Natural</h1>
                         <h2>____________</h2>
                         <br></br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                        <p>Adding Health to your Life naturally.</p>
                     </div>
                 </div>
                 <div class="page3">
@@ -188,7 +187,7 @@ session_start();
                         <h1>Always Fresh</h1>
                         <h2>____________</h2>
                         <br></br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                        <p>All produce comes from local farms that are delivered daily!</p>
                     </div>
                 </div>
                 <div class="page5">
@@ -199,7 +198,7 @@ session_start();
                         <h1>Healthy Cooking</h1>
                         <h2>____________</h2>
                         <br></br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                        <p>No concerns about preservatives in the produce that will provide a healthy meal for all!.</p>
                     </div>
                 </div>
             </div>
